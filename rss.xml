@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title></title>
+        <link>undefined</link>
+        <description>undefined</description>
+        <lastBuildDate>Sat, 27 Apr 2024 15:28:22 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[盘点一下可以装插件的手机浏览器]]></title>
+            <guid>540d2ae66d4b478fb9153a49935b8119</guid>
+            <pubDate>Sat, 27 Apr 2024 12:21:42 GMT</pubDate>
+            <content:encoded><![CDATA[<p>插件可以说是浏览器的灵魂。不能装插件的浏览器可以说是毫无趣味。在pc端，凡是基于chromium内核的浏览器，基本都支持谷歌商店的插件，像chrome、edge、qq、360极速等等。但是在手机端，情况就不一样了，大部分基于chromium内核的浏览器并不支持安装来自谷歌商店的插件，但这并不是说手机端就没有可以装插件的浏览器。接下来就给各位盘点一下手机端可以装插件的浏览器。</p>
+<h2 id="1-kiwi浏览器"><strong>1、Kiwi浏览器</strong></h2>
+<p>kiwi浏览器可以说是在可以装插件的浏览器里，使用最广的浏览器吧。它几乎支持了所有的来自谷歌商店的插件，也可以通过在本地安装crx文件的方式安装插件。之前也介绍过kiwi浏览器。目前kiwi浏览器主要是在github和谷歌play上进行更新，目前最新的版本内核都是非常新的。具体的插件安装方式见下图</p>
+<p><img src="/_resources/be36a040c4894c0e876cb4d180d0bd64.webp" /></p>
+<p><img src="/_resources/0b832b9ba2fa4f7c9a901ae8eb461926.webp" /></p>
+<p><img src="/_resources/2362f31633e842fb88b2b5d9db56a30e.webp" /></p>
+<h2 id="2-yandex浏览器"><strong>2、yandex浏览器</strong></h2>
+<p>yandex浏览器是俄罗斯出版的可以装插件的浏览器，yandex搜索也是俄罗斯最大搜索工具，但它的中文搜索一言难尽。之前介绍过yandex浏览器。它一共有正式版、beta、alpha三个版本。yandex浏览器可以直接从谷歌应用商店下载插件，也可以本地安装，但yandex浏览器的本地安装需要进行修改才可以本地安装，具体如何修改请看<a title="https://link.zhihu.com/?target=https%3A//www.cccitu.com/2666.html" href="https://link.zhihu.com/?target=https%3A//www.cccitu.com/2666.html">这个网址</a>。自安卓11以来，yandex的本地安装就已经废了。虽然yandex浏览器支持从谷歌应用商店下载插件，但它并不全部支持。许多的去广告的插件在yandex浏览器均不支持，大名鼎鼎的ublock插件在yandex上就是不兼容的，如果你是安卓10，可以离线导入crx文件。在线安装我们可以找其他的插件替代，这里我就推荐<a title="https://link.zhihu.com/?target=https%3A//chrome.google.com/webstore/detail/ublock-origin-development/cgbcahbpdhpcegmbfconppldiemgcoii" href="https://link.zhihu.com/?target=https%3A//chrome.google.com/webstore/detail/ublock-origin-development/cgbcahbpdhpcegmbfconppldiemgcoii">ublock orign development build</a>。</p>
+<p><img src="/_resources/957725c72f544e42bede13741e27a94f.webp" /></p>
+<h2 id="3-flow浏览器"><strong>3、Flow浏览器</strong></h2>
+<p>Flow浏览器更为小众。从它的图标看感觉像是火狐与edge的结合。</p>
+<p><img src="/_resources/15bb9ef1577144a98c8d2d59cb93b1a0.webp" /></p>
+<p>该浏览器的主页是一个有时间的类似于屏保的东西。而且它的默认搜索引擎里也没有搜狗、百度这样的国产搜索。而且一安装它就会内置两个插件，似乎没有办法移除，但可以关闭。</p>
+<p><img src="/_resources/68d70e0ff1a24bb4b81af1fa1c8aaf69.webp" /></p>
+<p><img src="/_resources/1b9085e7aa8e497cb7e15d32a4726b22.webp" /></p>
+<p>它与kiwi一样，可以支持从谷歌应用商店安装扩展和本地安装扩展两种方式。安装方式与kiwi完全一样，这更让人怀疑这就是kiwi套壳。</p>
+<p>该浏览器不支持登录账号，也就没有办法实现账号同步。</p>
+<h2 id="4-狐猴浏览器"><strong>4、狐猴浏览器</strong></h2>
+<p>狐猴浏览器算作是一个国产的可以装插件的手机浏览器。它的优势除了简洁之外，还有就是可以从edge商店里下载安装插件，而且也是几乎支持所有的来自谷歌应用商店和edge商店的插件。</p>
+<p><img src="/_resources/ee6d2dda538442e88dc11d6572cf4ff1.webp" /></p>
+<p><img src="/_resources/40836de1da8b465bb21ef9c66913a0e1.webp" /></p>
+<p><img src="/_resources/5158c68363f940e3bb56e77fdd6e8880.webp" /></p>
+<p>之前也介绍过这款浏览器，但那时候这款浏览器刚刚诞生内核版本非常低，现在就在前几天，这款浏览器的内核终于升到了98内核，版本得到大更新。版本更新之后扩展的位置也跑到了右上角。</p>
+<p><img src="/_resources/18ca65696f264d5dac42851580933fc0.webp" /></p>
+<p>但随之而来的还有众多的bug，但是不用担心，相信不久的将来，这些都会被修复。</p>
+<h2 id="5-firefox浏览器"><strong>5、Firefox浏览器</strong></h2>
+<p>Firefox浏览器是一个由<a title="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/Mozilla/7148071" href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/Mozilla/7148071">Mozilla</a>开发的自由及开放<a title="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%25E6%25BA%2590%25E4%25BB%25A3%25E7%25A0%2581/3587471" href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%25E6%25BA%2590%25E4%25BB%25A3%25E7%25A0%2581/3587471">源代码</a>的<a title="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%25E7%25BD%2591%25E9%25A1%25B5%25E6%25B5%258F%25E8%25A7%2588%25E5%2599%25A8/8309940" href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%25E7%25BD%2591%25E9%25A1%25B5%25E6%25B5%258F%25E8%25A7%2588%25E5%2599%25A8/8309940">网页浏览器</a>。由于Firefox浏览器在全球浏览器市场中占有非常大的比重，许多插件厂商在制作浏览器插件时也会考虑到Firefox用户，所以FireFox浏览器也会支持部分主流插件，想ublock origin、暴力猴、油猴等等。但支持的插件是赶不上kiwi的。在pc端，Firefox浏览器的版本是非常杂，它既有国内的版本，也有国际版本，这两个版本所支持的插件是不一样的。手机端的版本也是很杂，由于Firefox属于开源的，就出现了许多的第三方编译版本，像Iceraven、Nightly等等。由于与谷歌不相容，不能直接从谷歌应用商店下载插件。pc端可以直接从火狐独有的插件下载地址（addons.mozilla.org）下载插件，而移动端也可以在addons.mozilla.org上下载，也可以通过自定义插件集的方式下载插件。当然直接在网站上下载会受限，但是通过自定义插件集的方式，就会支持addons.mozilla.org上所有的插件。（注：addons.mozilla.org上有中文和英文两种，这两种所包含的插件内容会不一样）</p>
+<p><img src="/_resources/0a5f02bd81b24eba9615e361a21e995e.webp" /></p>
+<p>我们在火狐上输入<a title="https://link.zhihu.com/?target=http%3A//addons.mozilla.org" href="https://link.zhihu.com/?target=http%3A//addons.mozilla.org">http://addons.mozilla.org</a> 然后点击回车，一般默认打开的是中文版本的，但中文版本的所办喊的插件少之又少。而且直接在网站安装的话许多想ublock origin这样的插件我们安装不了。所以我们要打开英文版本的商店。但是在英文版本模式之下，我们只能通过自定义插件集方可安装到firefox</p>
+<p>接下来就教大家如何自定义插件集。我们首先需要打开类似于开发者模式的调试模式，在“关于firefox”中连续点击logo，直至出现调试模式打开的字样。</p>
+<p><img src="/_resources/a8d559813b17438c89db68d0ff9a4046.webp" /></p>
+<p><img src="/_resources/35127eea8f3c4806a44a802ce9fd79a4.webp" /></p>
+<p>打开之后，我们就会发现一个出现了一个“自定义附加组件收藏集”的选项。</p>
+<p><img src="/_resources/a0684be8e3974b0c9f2136a99a0a025a.webp" /></p>
+<p>然后进入</p>
+<p>，我们前提是必须有一个firefox账号，没有可以注册。然后我们搜索一个扩展，点击进入，往下滑就会看到一个“Add to collection”。点击选择创建一个新的collection。</p>
+<p><img src="/_resources/d12afbe3ecf549d0a441ea0b69d6c9c8.webp" /></p>
+<p>然后我们就会进入到创建collection的界面。</p>
+<p><img src="/_resources/e8db87d046cd49b7bde3020a31b3ea9a.webp" /></p>
+<p>我们在collection name中输入自己常用的简单的name（之后会用到）。在discription中随便输入，然后创建。创建成功之后，就会发现那个扩展就已经添加到刚刚创建的收藏集里面了，添加其他的扩展也是同样的道理，只不过我们就不用重新创建collection了，只需要把扩展添加到刚刚创建的收藏集里就可以了</p>
+<p><img src="/_resources/e74a6ba877684f639d9c294e3556cf08.webp" /></p>
+<p>然后我们点击右上角的账户，选择view my collection，就会进入到我们的collection的详细信息。</p>
+<p><img src="/_resources/524d7b61b26e41c19550088a7bc89560.webp" /></p>
+<p><img src="/_resources/a4f6b52374cb4753adaf9429f435199c.webp" /></p>
+<p>firefox users下面的数字和左上角的黑框中的字母就是我们需要用到的。点击设置中的自定义附加组件收藏集，</p>
+<p><img src="/_resources/0a8efa2954b949879964839c7563fbca.webp" /></p>
+<p>用户Id就是那串数字，收藏集名称就是那串字母。然后点击确定，等待重启应用，就会发现附加组件就出现了刚才添加的插件。</p>
+<p><img src="/_resources/20176038441041dd8fb8a32d7471e736.webp" /></p>
+<p>当然在英文版的扩展网址中也有许多的插件是不能用的，这种情况需要借助特殊的网络环境。</p>
+<img width="688" height="1529" src="/_resources/9be130ccd6ce4b4fae9c44e6e379b282.webp" class="jop-noMdConv" />
+<h2 id="6-chromium浏览器"><strong>6、Chromium浏览器</strong></h2>
+<p>没错，就是指的是Chromium浏览器，不是谷歌浏览器。一般来讲，我们通常所说的Chromium是浏览器内核，但在这里是浏览器，从图标上看，它与google浏览器，不一样的是颜色，Chromium是蓝色的，而谷歌浏览器是红绿黄三种颜色。谷歌开源的是Chromium，而不是chrome，许多国产的第三方的浏览器也是chromium而不是基于chrome。</p>
+<p><img src="/_resources/f4bafda79d8e41628640afb418f080c8.webp" /></p>
+<p><img src="/_resources/e69d7a5bf69341f7a5291e70acbf652c.webp" /></p>
+<p>这里我们使用的并不是官方的chromium，使用的时第三方的chromium（ungoogled-chromium,从名字上可以看出，它无法使用谷歌，也无法支持账号同步。当前的最新的版本是内核为88）官方的chromium好像并不支持。当然手机端的chromium浏览器也不是直接就支持插件安装，我们需要在chrome://flags中把扩展开关打开。</p>
+<p>我们需要在上方的地址栏输入chrome://flags 然后点击回车，输入Handing of extension MIME type requests，把这个东西打开就可以支持插件的安装。理论上来讲，它是可以支持crx文件的本地安装，但是并没有找到可以导入crx文件的地方，而且也无法用该浏览器打开crx。但是从谷歌应用商店是可以直接安装的。这里只测试了油猴，其他的并没有测试，但理论上应该是可以的。</p>
+<p><img src="/_resources/e4dcdec3b0914317b26a8c92add29211.webp" /></p>
+<p><img src="/_resources/bafaa72f96ba44c89922cbb87d7a76a9.webp" /></p>
+<p>由于扩展开关位于chrome://flags中，所以这个东西是实验性项目，必然会出现许多的bug。而且体积非常的大，来到了150m左右。</p>
+<p>以上就是我所知道的可以在手机上装插件的浏览器，当然也有一些像via、m浏览器等也可以装插件，但是远不及以上浏览器所支持的插件广，这些浏览器有的也只是支持油猴脚本而已，所以并没有推荐这些浏览器。如果我们要想真正在手机上使用pc端的插件，还得是以上推荐的浏览器。</p>
+<p>我把所有的浏览器都上传到了</p>
+<p><a title="https://link.zhihu.com/?target=https%3A//www.123pan.com/s/UllRVv-beQJ3" href="https://link.zhihu.com/?target=https%3A//www.123pan.com/s/UllRVv-beQJ3">123云盘</a></p>
+<p>提取码:6jZB</p>
+<p>如果有需求可以自行下载。</p>
+<p>浏览器最新年更新，除了flow和chromium浏览器，全部更至最新<a title="https://link.zhihu.com/?target=https%3A//share.feijipan.com/s/rQA4d3nN%3Fcode%3D1234" href="https://link.zhihu.com/?target=https%3A//share.feijipan.com/s/rQA4d3nN%3Fcode%3D1234">小飞机网盘</a></p>
+<p>编辑于 2024-04-01 · 著作权归作者所有</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[TeX Live 2024 安装教程（Windows/WSL/Linux） - Eslzzyl]]></title>
+            <guid>e64726fde4ce45a5b5838c8bf5eb1058</guid>
+            <pubDate>Sat, 27 Apr 2024 10:21:52 GMT</pubDate>
+            <content:encoded><![CDATA[<p>（2024 年 3 月更新）本文起初是针对 TeX Live 2023 版本编写的。TeX Live 2024 发布后，针对新版的内容进行了调整。</p>
+<p>应同学的要求写一个 TeX Live 的安装和使用教程。实际上相关的安装教程已经有很多，本文主要介绍在 WSL 中安装 TeX Live 的方法，这也是我推荐的在 Windows 平台上使用 TeX Live 的方式；同时本文还会简单讨论一下 TeX Live 包含的组件（根据需要选择其中的一部分安装）。</p>
+<p>参考链接：</p>
+<ul>
+<li><a title="http://tug.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf" href="http://tug.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf">http://tug.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf</a> （推荐，非常详细）这也是本文主要参考的文献。如果本文不能很好地解决你的问题，不妨看看这个。</li>
+</ul>
+<h2 id="什么是-tex-live">什么是 TeX Live?</h2>
+<p>这一节是简单的科普。如果你知道什么是 TeX Live，可以跳过本节。</p>
+<p>TeX Live 是目前 Windows 平台和 Linux 平台上最主流的 LaTeX 发行版。所谓 LaTeX 发行版，是指将 LaTeX 编译引擎（如 <code>pdflatex</code>、<code>xelatex</code>、<code>lualatex</code> 等）、宏包（如 <code>beamer</code>、<code>pgf/tikz</code> 等）、模板（比如一些学校的毕业论文模板）、字体、配套工具（如 <code>tlmgr</code>、<code>texworks</code> 等）打包在一起的、开箱即用的 LaTeX 套件。</p>
+<p>TeX Live 为滚动发行<sup class="jop-noMdConv"><a id="fnref1" class="jop-noMdConv"></a><a title="#fn1" href="#fn1">[1]</a></sup>，每年发布一版，发布形式是一个全平台的安装镜像（<code>.iso</code>），发布时间大约是每年的 3 月中下旬。</p>
+<p>截至本文最后一次更新时，最新的 TeX Live 版本是 2024。</p>
+<h2 id="一些安装平台的对比">一些安装平台的对比</h2>
+<p>首先我推荐在 Linux 平台安装 TeX Live（Mac 不在本文的讨论之列）。出于各种原因（<a title="https://stackoverflow.com/questions/6916011/how-do-i-get-windows-to-go-as-fast-as-linux-for-compiling-c" href="https://stackoverflow.com/questions/6916011/how-do-i-get-windows-to-go-as-fast-as-linux-for-compiling-c">这篇帖子</a> 有比较深入的讨论），Linux 下程序的编译速度可以达到 Windows 下的数倍。根据我的经验，对于 LaTeX 项目，Linux 可以获得至少 5 倍的编译加速。</p>
+<ul>
+<li>
+<p>如果你使用原生 Linux，那么皆大欢喜：你可以轻松获得最佳（主要是速度方面）的 TeX Live 体验。</p>
+</li>
+<li>
+<p>如果你使用 Windows：</p>
+<ul>
+<li>现代 Windows（10、11）提供了一种方便的 Linux 子系统即 <a title="https://learn.microsoft.com/zh-cn/windows/wsl/about" href="https://learn.microsoft.com/zh-cn/windows/wsl/about">WSL</a>，允许 Windows 和 Linux 深度融合，其中 WSL2 提供了原生的 ext4 文件系统。因此将 TeX Live 安装到 WSL（指 WSL2，下同）中，是我最推荐的在 Windows 下使用 LaTeX 工具链的方式。这种方法是将是本文介绍的重点。本文也会介绍使用 <code>vscode-remote</code> 在 WSL 中完成 LaTeX 编写的方法。</li>
+<li>然而 WSL 本身包含一个完整的 Linux 发行版，可能会占用一点额外空间，而且默认只能装在 C 盘（当然有绕过限制的方法，可以自行查找），这为平时不需要 Linux 环境的同学带来了一些不必要的麻烦，因此本文也会简单介绍一下如何直接在 Windows 系统中安装 TeX Live。</li>
+</ul>
+</li>
+</ul>
+<p>另外，有些 Linux 发行版的软件源中会带有 TeX Live，但那种安装方式不太推荐。推荐的方法是用镜像安装。</p>
+<h2 id="安装前的准备工作">安装前的准备工作</h2>
+<ul>
+<li>
+<p>如果你决定在 WSL 中安装 TeX Live（推荐），那么你需要自行安装一个 WSL 发行版，<a title="https://learn.microsoft.com/zh-cn/windows/wsl/install" href="https://learn.microsoft.com/zh-cn/windows/wsl/install">微软官方安装教程</a>；本文将以 Ubuntu 22.04（也是目前 WSL 默认的发行版）为例。国内下载 WSL 镜像经常卡住，可以多试几次。</p>
+<ul>
+<li>提一下本文必要的知识：在 WSL 中，Windows 主系统的分区将自动挂载到<code>/mnt</code>文件夹，即你可以通过 <code>/mnt/c</code>、<code>/mnt/d</code> 等等文件夹访问这些分区。你访问的实际上是 NTFS 文件系统，两个文件系统之间的通信由 WSL 自动完成。</li>
+</ul>
+</li>
+<li>
+<p>你应该确保你的文件系统中有至少 3 GB 的空闲空间用于安装 TeX Live。这是本文推荐的安装配置需要的磁盘大小。如果你要安装 TeX Live 2024 的全部组件，那么应该有至少 8GB 的空闲空间。（题外话：想要轻量级排版系统的可以关注一下 <a title="https://typst.app/" href="https://typst.app/">Typst</a> 这个项目）</p>
+</li>
+<li>
+<p>你可以预先安装 <a title="https://code.visualstudio.com/" href="https://code.visualstudio.com/">Visual Studio Code</a> 并安装 <a title="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">LaTeX Workshop</a> 扩展。这也是我推荐的编辑 TeX 文件的工具。我们<strong>不会</strong>使用 TeX Live 自带的 <code>texworks</code> 工具或者久负盛名的 <code>texstudio</code> 工具。</p>
+<ul>
+<li>如果你使用 WSL，那么你应该在 Windows 主系统中安装 VSCode。当你首次在 WSL 的文件系统中打开 VSCode 时，会自动安装需要的服务端程序。此外你还应该安装 <a title="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack">Remote Development</a> 扩展包。</li>
+</ul>
+</li>
+</ul>
+<h2 id="下载安装镜像">下载安装镜像</h2>
+<p>到某个国内的 CTAN 镜像站下载最新版的 TeX Live 镜像，比如 <a title="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/" href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">清华大学开源软件镜像站</a>。</p>
+<p>目前最新的 TeX Live 版本为 2024，该文件夹下包含 3 个 <code>.iso</code> 文件，这 3 个文件仅有文件名不同，内容完全相同，你可以任选一个下载。该文件夹下还包含有 <code>md5</code> 摘要文件，你也可以下载下来以备校验。后面会提供 2024 版 TeX Live 镜像的 <code>md5</code> 值。</p>
+<ul>
+<li>如果你使用 Windows 系统（包括 WSL），可以随便把镜像放在某个地方。为简单起见，下面的例子假设放在 <code>D</code> 盘，即 <code>D:\texlive2024.iso</code>。
+<ul>
+<li>如果你要装在 WSL 中，此时<strong>不必也不应该</strong>将镜像移入 WSL 的文件系统。后续我们的安装将通过 <code>/mnt/d</code> 来借助 WSL 的文件系统桥梁访问镜像文件。</li>
+</ul>
+</li>
+<li>如果你使用原生 Linux 系统，可以放在用户主目录中。此处以 <code>~/texlive2024.iso</code> 为例。</li>
+</ul>
+<h2 id="校验安装镜像">校验安装镜像</h2>
+<p>这一步是<strong>可选的</strong>，主要是检查下载过程中镜像有没有出现损坏，以及镜像是否被第三方篡改过。实际上现在的网络条件很好了，一般不会出问题的。如果从正规的镜像站下载，也不必担心篡改的问题。</p>
+<ul>
+<li>
+<p>Windows 系统：在 PowerShell 中切换到镜像所在的文件夹（例： <code>D:\</code>），然后执行</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> certutil -hashfile texlive2024.iso md5 </span>|
+</code></pre></div>
+<p><code>md5</code> 计算需要完整读取整个镜像文件，因此计算会持续一段时间，取决于你机器的运算速度和硬盘读取速度，请耐心等待。</p>
+<ul>
+<li>在WSL中安装也应该使用这种方法，而不是在 WSL 中通过 <code>md5sum</code> 计算<code>/mnt/d/texlive2024.iso</code>，那纯粹多此一举且浪费时间。</li>
+</ul>
+</li>
+<li>
+<p>Linux 系统：在 Shell（如 bash）中切换到镜像所在的文件夹，然后执行</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> md5sum texlive2024.iso </span>|
+</code></pre></div>
+<p><code>md5</code> 计算需要完整读取整个镜像文件，因此计算会持续一段时间，请耐心等待。</p>
+</li>
+</ul>
+<p>你应该可以得到 TeX Live 2024 镜像文件的 <code>md5</code> 值 <code>a54f5524e51267dee37e72e3b3fd31c4</code>。</p>
+<h2 id="挂载安装镜像">挂载安装镜像</h2>
+<ul>
+<li>
+<p>如果你要装在 WSL 中，那么进入 WSL 的 Shell 并执行</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> sudo mkdir /mnt/texlive </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> sudo mount /mnt/d/texlive2024.iso /mnt/texlive </span>|
+</code></pre></div>
+<p>你需要提供一次用户的密码（用户密码在 WSL 安装时指定）。应该会得到如下的结果（写保护是正常现象，我们只需要读权限就可以了）：</p>
+  <img width="708" height="141" src="/_resources/b833fd55e2c046d481aaa35b1574eeb7.png" class="jop-noMdConv" />
+<p>后续我们可以在 <code>/mnt/texlive</code> 中访问安装镜像内部的各种文件。</p>
+</li>
+<li>
+<p>如果你是原生 Linux，操作和上面类似，只是需要把 <code>/mnt/d/texlive2024.iso</code> 换成对应的路径就可以了。</p>
+</li>
+<li>
+<p>如果你是原生 Windows，右键单击 <code>texlive2024.iso</code>，选择“装载”。然后你可以在“此电脑”中看到这个镜像。记下它的盘符（如 <code>Z:</code>）。</p>
+</li>
+</ul>
+<h2 id="启动安装程序">启动安装程序</h2>
+<p>从这一节开始，WSL 和原生 Linux 的步骤完全一样了，此处不再特别区分，统一以“Linux”代指。</p>
+<ul>
+<li>
+<p>Linux：在 Shell 中执行</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> sudo /mnt/texlive/install-tl </span>|
+</code></pre></div>
+</li>
+<li>
+<p>Windows：打开 PowerShell 或 cmd，执行</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> Z:\install-tl-windows.bat --no-gui </span>|
+</code></pre></div>
+<p>盘符需要按需替换为上一节记录的盘符。如果你希望使用 GUI 安装程序，则无需在命令行中执行，直接双击 <code>install-tl-windows.bat</code> 即可。不过本文不会讲解 GUI 安装程序。</p>
+</li>
+</ul>
+<p>你应该能够看到如下内容：</p>
+<div><pre class="hljs"><code>|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> ======================&gt; TeX Live installation procedure &lt;===================== </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> ======&gt;   Letters/digits in &lt;angle brackets&gt; indicate   &lt;======= </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> ======&gt;   menu items for actions or customizations      &lt;======= </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> = help&gt;   https://tug.org/texlive/doc/install-tl.html   &lt;======= </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> Detected platform: GNU/Linux on x86_64 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;B&gt; set binary platforms: 1 out of 15 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;S&gt; set installation scheme: scheme-full </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;C&gt; set installation collections: </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> 40 collections out of 41, disk space required: 8315 MB (free: 70621 MB) </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;D&gt; set directories: </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> TEXDIR (the main TeX directory): </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> /usr/local/texlive/2024 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> TEXMFLOCAL (directory for site-wide local files): </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> /usr/local/texlive/texmf-local </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> TEXMFSYSVAR (directory for variable and automatically generated data): </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> /usr/local/texlive/2024/texmf-var </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> TEXMFSYSCONFIG (directory for local config): </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> /usr/local/texlive/2024/texmf-config </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> TEXMFVAR (personal directory for variable and automatically generated data): </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> ~/.texlive2024/texmf-var </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> TEXMFCONFIG (personal directory for local config): </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> ~/.texlive2024/texmf-config </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> TEXMFHOME (directory for user-specific files): </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> ~/texmf </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;O&gt; options: </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> [ ] use letter size instead of A4 by default </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> [X] allow execution of restricted list of programs via \write18 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> [X] create all format files </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> [X] install macro/font doc tree </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> [X] install macro/font source tree </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> [ ] create symlinks to standard directories </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> [X] after install, set CTAN as source for package updates </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;V&gt; set up for portable installation </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> Actions: </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;I&gt; start installation to hard disk </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;P&gt; save installation profile to 'texlive.profile' and exit </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;Q&gt; quit </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> Enter command: </span>|<span class="hljs-string"> </span></code></pre></div>
+<h2 id="调整安装配置">调整安装配置</h2>
+<p>这一节是<strong>可选的</strong>。实际上 TeX Live 中有许多组件是很少用的，为了节省磁盘空间，我们精简一些组件。如果你的硬盘足够大，不在乎空间占用，可以直接进入下一步。</p>
+<p>这一节参考了 <a title="https://zhuanlan.zhihu.com/p/133984428" href="https://zhuanlan.zhihu.com/p/133984428">https://zhuanlan.zhihu.com/p/133984428</a></p>
+<p>TeX Live 的打包策略为体系（scheme）——集合（collection）——软件包/宏包三层。其中可定制安装的是集合层次。TeX Live 2024 包括了 41 个集合。针对这些集合的解释可以参考上面的链接，这里就不赘述了。</p>
+<p>Linux 的安装路径不建议改，否则之后出问题查文档可能会雪上加霜。Windows 随意，但路径不能带有非 ASCII 字符，而且不要太深，否则容易出问题。</p>
+<p>在安装程序中输入 <code>C</code> 并回车，进入安装组件定制页面。</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> =============================================================================== </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> Select collections: </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> a [X] Essential programs and files      w [X] Italian </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> b [X] BibTeX additional styles          x [X] Japanese </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> c [X] TeX auxiliary programs            y [X] Korean </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> d [X] ConTeXt and packages              z [X] Other languages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> e [X] Additional fonts                  A [X] Polish </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> f [X] Recommended fonts                 B [X] Portuguese </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> g [X] Graphics and font utilities       C [X] Spanish </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> h [X] Additional formats                D [X] LaTeX fundamental packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> i [X] Games typesetting                 E [X] LaTeX additional packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> j [X] Humanities packages               F [X] LaTeX recommended packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> k [X] Arabic                            G [X] LuaTeX packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> l [X] Chinese                           H [X] MetaPost and Metafont packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> m [X] Chinese/Japanese/Korean (base)    I [X] Music packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> n [X] Cyrillic                          J [X] Graphics, pictures, diagrams </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> o [X] Czech/Slovak                      K [X] Plain (La)TeX packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> p [X] US and UK English                 L [X] PSTricks </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> s [X] Other European languages          M [X] Publisher styles, theses, etc. </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> t [X] French                            N [ ] Windows-only support programs </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> u [X] German                            O [X] XeTeX and packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> v [X] Greek </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> P [X] Mathematics, natural sciences, computer science packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> S [X] TeXworks editor; TL includes only the Windows binary </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> Actions: (disk space required: 8315 MB) </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;-&gt; deselect all </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;+&gt; select all </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;R&gt; return to main menu </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> &lt;Q&gt; quit </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> Enter letter(s) to (de)select collection(s): </span>|
+</code></pre></div>
+<p>输入集合对应的字母可以选中/取消选中。支持批量输入。可以不装的组件有：</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> d [ ] ConTeXt and packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> e [ ] Additional fonts		// 各种字体，空间大头 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> g [ ] Graphics and font utilities </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> i [ ] Games typesetting		// 排版游戏用的 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> j [ ] Humanities packages	// 人文科学类宏包，按需安装即可 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> E [ ] LaTeX additional packages		// 空间大头 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> H [ ] MetaPost and Metafont packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> I [ ] Music packages	// 排版乐谱用的 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> K [ ] Plain (La)TeX packages </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> L [ ] PSTricks		// 老旧技术 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> M [ ] Publisher styles, theses, etc.	// 各种学术、毕业论文模板，需要学术写作可以装一下 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> N [ ] Windows-only support programs		// linux不支持，默认取消勾选 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> S [ ] TeXworks editor; TL includes only the Windows binary </span>|
+</code></pre></div>
+<ul>
+<li>各种语言集合上面省略了，根据需要选择即可。如果不需要外语支持，语言类集合中仅选择 <code>Chinese</code> 和 <code>Chinese/Japanese/Korean (base)</code>、<code>US and UK English</code> 即可。
+<ul>
+<li>注意，如果需要中文支持，那么 <code>Chinese</code> 和 <code>Chinese/Japanese/Korean (base)</code>（这三种语言的首字母形成了有名的缩写：CJK）都是<strong>必不可少</strong>的。同理 <code>Japanese</code> 和 <code>Korean</code> 集合也都依赖 <code>CJK base</code>。</li>
+</ul>
+</li>
+<li>TeXworks 是一个简单的 LaTeX 编辑器，我们将会使用 VSCode 来编辑 LaTeX ，因此这个组件可以不装。另外只有 Windows 平台提供有编译好的二进制文件，Linux 平台估计要手动编译。</li>
+</ul>
+<p>即使有些宏包在上面精简了，后期仍然可以使用 <code>tlmgr</code> 工具来单独安装它们。因此不用太担心。</p>
+<p>我把可以不装的包的序号写在下面，可以直接复制粘贴然后回车：</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> deghijkstuvwxyznoABCEHIKLMNS </span>|
+</code></pre></div>
+<p>我这里经过一番精简后，原本需要的 8315 MB 空间精简到了 2708 MB。</p>
+<p>这样精简之后，编译有些模板时可能会报错说找不到宏包。此时可以使用<code>tlmgr</code> 从 CTAN 单独安装它们。</p>
+<p>确认无误后，输入 <code>R</code> 并回车，回到主界面。</p>
+<h2 id="执行安装">执行安装</h2>
+<p>输入 <code>I</code> 并回车，开始执行安装。</p>
+<p>TeX Live 安装慢是出了名的。根据机器性能（主要是硬盘随机读写）不同，实际的安装时间可能从几分钟到数小时不等。好在安装时会提示进度。请耐心等待安装完成。</p>
+<p>上面精简过的版本在一台配有 PCIe 3.0 的 SSD 的机器上安装时间不会多于 10 分钟。</p>
+<h2 id="安装善后">安装善后</h2>
+<h3 id="linux">Linux</h3>
+<p>首先将安装镜像弹出并删除 <code>/mnt/texlive</code> 文件夹：</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> sudo umount /mnt/texlive	# 注意不是unmount! </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> sudo rm -r /mnt/texlive </span>|
+</code></pre></div>
+<p>之后，更新必要的环境变量。对于 bash，可以修改 <code>~/.bashrc</code> 文件，在文件末尾添加（可以用 Vim，或者用 VSCode，见<a title="#%E4%BD%BF%E7%94%A8VSCode" href="#%E4%BD%BF%E7%94%A8VSCode">使用 VSCode</a> 一节）</p>
+<div><pre class="hljs"><code>
+
+|     |     |
+| --- | --- |
+|     | <span class="hljs-comment"># Add TeX Live to the PATH, MANPATH, INFOPATH |</span>
+|     | export PATH=<span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/texlive/</span><span class="hljs-number">2024</span><span class="hljs-regexp">/bin/</span>x86_64-linux:<span class="hljs-variable">$PATH</span> |
+|     | export MANPATH=<span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/texlive/</span><span class="hljs-number">2024</span><span class="hljs-regexp">/texmf-dist/</span>doc/man:<span class="hljs-variable">$MANPATH</span> |
+|     | export INFOPATH=<span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/texlive/</span><span class="hljs-number">2024</span><span class="hljs-regexp">/texmf-dist/</span>doc/info:<span class="hljs-variable">$INFOPATH</span> |
+</code></pre></div>
+<p>保存退出，重启 bash 或者执行命令 <code>source ~/.bashrc</code> 来重载 bash 配置，然后执行</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> tex -v </span>|
+</code></pre></div>
+<p>如果正常输出了版本信息，则说明安装成功。</p>
+<blockquote>
+<p>注意，上面的命令设置了 <code>MANPATH</code> 环境变量。该变量用于指示 <code>man</code> 工具到何处查找手册文档。Linux 的默认 <code>MANPATH</code> 位置是 <code>/usr/share/man</code>。操作完毕后，建议执行一下 <code>echo $MANPATH</code> 来检查 <code>MANPATH</code> 中是否还包含 <code>/usr/share/man</code>。我在这样设置之后不知为何丢失了默认的 <code>MANPATH</code> 路径，导致大部分手册都查不到了。如果你也丢失了，可能要在 <code>.bashrc</code> 中手动添加一下。</p>
+</blockquote>
+<blockquote>
+<p>如果你使用的是别的 Shell，那么需要在对应 Shell 的配置文件中进行修改。zsh 和 bash 都会读取 <code>~/.profile</code>，因此你可以修改 <code>.profile</code> 而不是 <code>.bashrc</code>。对于 Fish Shell，需要在 <code>~/.config/fish/config.fish</code> 中添加以下命令：</p>
+<div><pre class="hljs"><code>
+
+|     |     |
+| --- | --- |
+|     | set -gx PATH <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/texlive/</span><span class="hljs-number">2024</span><span class="hljs-regexp">/bin/</span>x86_64-linux <span class="hljs-variable">$PATH</span> |
+|     | set -gx MANPATH <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/texlive/</span><span class="hljs-number">2024</span><span class="hljs-regexp">/texmf-dist/</span>doc/man |
+|     | set -gx INFOPATH <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/texlive/</span><span class="hljs-number">2024</span><span class="hljs-regexp">/texmf-dist/</span>doc/info <span class="hljs-variable">$INFOPATH</span> |
+</code></pre></div>
+</blockquote>
+<p>接下来执行</p>
+<div><pre class="hljs"><code>
+
+|     |     |
+| --- | --- |
+|     | sudo cp <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/texlive/</span><span class="hljs-number">2024</span><span class="hljs-regexp">/texmf-var/</span>fonts<span class="hljs-regexp">/conf/</span>texlive-fontconfig.conf <span class="hljs-regexp">/etc/</span>fonts<span class="hljs-regexp">/conf.d/</span><span class="hljs-number">09</span>-texlive.conf |
+|     | sudo fc-cache -fsv |
+</code></pre></div>
+<p>来刷新字体缓存。</p>
+<p>如果修改了安装路径，则需要将上面命令中的路径进行替换。</p>
+<h3 id="windows">Windows</h3>
+<p>在“此电脑”中右键镜像，选择“弹出”。</p>
+<h2 id="卸载-tex-live">卸载 TeX Live</h2>
+<p>请参见本文开头的链接。通过镜像安装 TeX Live 时，安装的文件位置非常集中，卸载并不困难。</p>
+<h2 id="使用-texdoc">使用 texdoc</h2>
+<p><code>texdoc</code> 命令是 TeX Live 提供的文档查看命令。在命令行使用 <code>texdoc</code>，可以使用默认的 PDF 阅读器打开对应的文档。比如打开经典的快速入门教程 <code>lshort</code>：</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> texdoc lshort-zh-cn </span>|
+</code></pre></div>
+<h2 id="使用-vscode">使用 VSCode</h2>
+<p>VSCode + LaTeX Workshop 扩展是目前<strong>体验最佳</strong>的 LaTeX 编辑方案。而且它完全免费。</p>
+<p>前文已经提过：</p>
+<ul>
+<li>
+<p>如果你使用原生 Linux 或原生 Windows，那么你只需要安装 LaTeX Workshop 扩展即可。</p>
+</li>
+<li>
+<p>如果你使用 WSL，你还需要安装“Remote Development”扩展包。</p>
+</li>
+</ul>
+<p>新建一个文件夹，然后使用 VSCode 打开它。在命令行中，你可以这样做：</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> cd WorkSpace/ </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> mkdir tex-example </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> code tex-example/ </span>|
+</code></pre></div>
+<p>VSCode 窗口将自动弹出并建立到 WSL 的连接。同理，在 WSL Shell 中可以使用 <code>code</code> 命令打开 WSL 文件系统中的任意文件/文件夹。</p>
+<p>新建一个 <code>main.tex</code> 文件，输入以下内容：</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> \documentclass{ctexart} </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> \title{TeX示例} </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> \date{\today} </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> \author{Eslzzyl} </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> \begin{document} </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> \maketitle </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> 你好世界！ </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> \end{document} </span>|
+</code></pre></div>
+<p>在左侧边栏中点击“TEX”按钮（选项卡？），然后点击“latexmk(xelatex)”选项，</p>
+<p><img src="/_resources/1af3e61004e04e0395d763cd170d4ae7.png" /></p>
+<p>将自动在当前文件夹下生成 <code>main.pdf</code> 文件。</p>
+<p><code>xelatex</code> 支持 UTF-8，涉及中文的文档需要使用 <code>xelatex</code>。如果仅有英文内容，可以使用 <code>pdflatex</code>，编译速度更快。</p>
+<p>LaTeX Workshop 默认提供了多种编译方案（即“recipe”）。按下 Ctrl+Alt+B，将使用第一个 recipe。如果文档有 UTF-8 内容，这样会报错。我们可以修改当前文件夹的设置来解决这一问题。在当前文件夹新建 <code>.vscode/settings.json</code>，填入以下内容：</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> {   </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> "latex-workshop.latex.recipe.default": "latexmk (xelatex)", </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> "latex-workshop.latex.autoBuild.run": "never", </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> "editor.wordWrap": "on", </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> "latex-workshop.view.pdf.invertMode.enabled": "auto", </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> "latex-workshop.view.pdf.invert": 0.9 </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> }   </span>|
+</code></pre></div>
+<p>解释一下每个配置项的含义。</p>
+<ul>
+<li><code>"latex-workshop.latex.recipe.default": "latexmk (xelatex)"</code> 将默认 recipe 设置为 <code>latexmk (xelatex)</code>。</li>
+<li><code>"latex-workshop.latex.autoBuild.run": "never"</code> 将 LaTeX Workshop 的自动编译行为设置为“永不”。这样，只有我们手动执行编译操作时，才会编译文档。LaTeX 本身不是一个所见即所得的排版系统，没必要太频繁地更新。</li>
+<li><code>"editor.wordWrap": "on"</code> 为 VSCode 的文本编辑器开启自动换行。LaTeX 文档开启自动换行会比较方便查看。因为这个配置项是写在当前工作目录中的，所以它只会在当前目录中生效，不会影响到 VSCode 的全局自动换行行为。</li>
+<li><code>"latex-workshop.view.pdf.invertMode.enabled": "auto"</code> 开启了 LaTeX Workshop 提供的自动反色功能（见<a title="https://github.com/James-Yu/LaTeX-Workshop/wiki/View#invert-mode" href="https://github.com/James-Yu/LaTeX-Workshop/wiki/View#invert-mode">此处</a>）。自动反色开启时，若 VSCode 颜色主题为浅色，那么 PDF 文档将原样显示；若 VSCode 颜色主题为深色，那么 PDF 文档将会反色显示，这样观感比较统一。</li>
+<li><code>"latex-workshop.view.pdf.invert": 0.9</code> 设置反色指数。</li>
+</ul>
+<p>重启 VSCode，再次按下 Ctrl+Alt+B，将使用 <code>latexmk (xelatex)</code>这个recipe。</p>
+<h2 id="使用-pdf-阅读器">使用 PDF 阅读器</h2>
+<h3 id="内置阅读器">内置阅读器</h3>
+<p>LaTeX Workshop 提供了内置的 PDF 预览功能，你可以利用 VSCode 的分屏功能将工作区分屏，左侧显示 LaTeX 文档，右侧显示 PDF。这样的效果是最好的。如果你使用WSL，那么需要确保WSL版本&gt;=1.2.1<sup class="jop-noMdConv"><a id="fnref2" class="jop-noMdConv"></a><a title="#fn2" href="#fn2">[2]</a></sup>。在 PowerShell 中输入</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> wsl --version </span>|
+</code></pre></div>
+<p>来查看 WSL 的版本。这里的版本和 WSL1/2 的 1 和 2 没有关系。如有必要，输入</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> wsl --update </span>|
+</code></pre></div>
+<p>来更新 WSL（更新的是 WSL 组件本身，而不是 WSL 中安装的发行版）</p>
+<h3 id="外置阅读器">外置阅读器</h3>
+<p>你也可以使用喜爱的 PDF 阅读器打开编译得到的 PDF 文件。主流的 PDF 阅读器都支持自动刷新 PDF。</p>
+<ul>
+<li>在 Windows 下，我最推荐 <a title="https://www.sumatrapdfreader.org/free-pdf-reader" href="https://www.sumatrapdfreader.org/free-pdf-reader">SumatraPDF</a>。</li>
+<li>在 KDE 桌面环境下，我推荐 <a title="https://okular.kde.org/" href="https://okular.kde.org/">Okular</a>。</li>
+<li>Linux 还有一种使用 Vim 键位模式的轻量级 PDF 阅读器 Zathura，支持全键盘操作，可定制程度很高。</li>
+</ul>
+<p>如果你使用 WSL，那么你可以在 Windows 中安装 SumatraPDF，然后把安装目录加入（Windows 的）环境变量，就可以在 WSL 中使用 SumatraPDF。</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> sumatrapdf.exe main.pdf </span>|
+</code></pre></div>
+<p>如果你的 WSL 支持 WSLg（Win11 之后的 WSL 均支持），那么也可以安装你喜爱的 Linux PDF 阅读器来查看 PDF 文档（Zathura 是最轻量的）：</p>
+<div><pre class="hljs"><code>
+
+|<span class="hljs-string">     </span>|<span class="hljs-string">     </span>|
+|<span class="hljs-string"> --- </span>|<span class="hljs-string"> --- </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> sudo apt install zathura </span>|
+|<span class="hljs-string">     </span>|<span class="hljs-string"> zathura main.pdf </span>|
+</code></pre></div>
+<p>latex workshop还提供正向/反向查找功能，这里不再赘述了。</p>
+<hr />
+<ol>
+<li>
+<p>"TeX Live itself is a rolling release distribution, based on the model of the user having to upgrade once a year, but with individual package upgrades available on a sub-daily basis."。见 <a title="https://wiki.archlinux.org/title/TeX_Live" href="https://wiki.archlinux.org/title/TeX_Live">https://wiki.archlinux.org/title/TeX_Live</a> <a title="#fnref1" href="#fnref1">↩︎</a></p>
+</li>
+<li>
+<p>和port forwarding有关系。见 <a title="https://github.com/James-Yu/LaTeX-Workshop/discussions/3833" href="https://github.com/James-Yu/LaTeX-Workshop/discussions/3833">https://github.com/James-Yu/LaTeX-Workshop/discussions/3833</a> <a title="#fnref2" href="#fnref2">↩︎</a></p>
+</li>
+</ol>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[快速部署 Shadowsocks Docker版]]></title>
+            <guid>2de0f45c75754f198cd0dd9bcc927b2d</guid>
+            <pubDate>Sat, 27 Apr 2024 04:38:46 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="需求"><a title="需求" href="#%E9%9C%80%E6%B1%82"></a>需求</h2>
+<p>搭梯子翻墙访问google</p>
+<h2 id="准备条件"><a title="准备条件" href="#%E5%87%86%E5%A4%87%E6%9D%A1%E4%BB%B6"></a>准备条件</h2>
+<ol>
+<li>一台墙外VPS（本文使用腾讯云香港 - centos7.6）</li>
+<li>一台能SSH连接到VPS的本地电脑 （推荐连接工具xshell）</li>
+</ol>
+<h2 id="遇到的问题"><a title="遇到的问题" href="#%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"></a>遇到的问题</h2>
+<p>因为在腾讯上直接安装使用shadowsocks遇到了”connect reset by peer”的问题，在公司访问(可直连境外)是正常的，用4g/家里wifi访问就会出现上述错误，怀疑是腾讯云做了相关网站的流量拦截，故想到这用docker再代理一层。</p>
+<h2 id="服务端安装步骤"><a title="服务端安装步骤" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4"></a>服务端安装步骤</h2>
+<p>安装docker</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>wget -qO- get.docker.com | bash</td>
+</tr>
+</tbody>
+</table>
+<p>查看docker的版本信息、加入开启启动、启动docker应用</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3</td>
+<td>docker version  <br class="jop-noMdConv" />systemctl enable docker  <br class="jop-noMdConv" />systemctl start docker</td>
+</tr>
+</tbody>
+</table>
+<p>拉取docker版shadowsocks-libev</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>docker pull appso/shadowsocks-libev</td>
+</tr>
+</tbody>
+</table>
+<p>创建shadowssocks配置文件，主要不要变动配置文件目录，默认配置路径为 <strong>/etc/shadowsocks-libev/config.json</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3</td>
+<td>mkdir -p /etc/shadowsocks-libev/  <br class="jop-noMdConv" />touch /etc/shadowsocks-libev/config.json  <br class="jop-noMdConv" />vi /etc/shadowsocks-libev/config.json</td>
+</tr>
+</tbody>
+</table>
+<p>config.json 配置内容</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3  <br class="jop-noMdConv" />4  <br class="jop-noMdConv" />5  <br class="jop-noMdConv" />6  <br class="jop-noMdConv" />7  <br class="jop-noMdConv" />8  <br class="jop-noMdConv" />9</td>
+<td>{  <br class="jop-noMdConv" />    "server":"0.0.0.0",  <br class="jop-noMdConv" />    "server_port":443,  <br class="jop-noMdConv" />    "password":"your client connection password",  <br class="jop-noMdConv" />    "timeout":300,  <br class="jop-noMdConv" />    "method":"aes-256-gcm",  <br class="jop-noMdConv" />    "fast_open":false,  <br class="jop-noMdConv" />    "mode":"tcp_and_udp"  <br class="jop-noMdConv" />}</td>
+</tr>
+</tbody>
+</table>
+<p>使用docker启动shadowsocks</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>docker run -d -p 443:443 -p 443:443/udp --name ss-libev -v /etc/shadowsocks-libev:/etc/shadowsocks-libev appso/shadowsocks-libev</td>
+</tr>
+</tbody>
+</table>
+<p>查看容器启动状态</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3</td>
+<td>[root@007_centos ~]  <br class="jop-noMdConv" />CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS                  PORTS                                        NAMES               SIZE  <br class="jop-noMdConv" />84c3fd45cbea        appso/shadowsocks-libev   "ss-server -c /etc/s…"   2 days ago          Up 2 days               0.0.0.0:443-&gt;443/tcp, 0.0.0.0:443-&gt;443/udp    ss-libev           0B (virtual 120MB)</td>
+</tr>
+</tbody>
+</table>
+<p>查看端口(443)监听状态</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3</td>
+<td>[root@007_centos ~]  <br class="jop-noMdConv" />tcp6       0      0 :::443                  :::*                    LISTEN      13435/docker-proxy    <br class="jop-noMdConv" />udp6       0      0 :::443                  :::*                                13446/docker-proxy</td>
+</tr>
+</tbody>
+</table>
+<p>至此，服务端安装完毕。</p>
+<h2 id="windows客户端安装"><a title="windows客户端安装" href="#windows%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85"></a>windows客户端安装</h2>
+<p>打开 <a title="https://github.com/shadowsocks/shadowsocks-windows/releases" href="https://github.com/shadowsocks/shadowsocks-windows/releases">https://github.com/shadowsocks/shadowsocks-windows/releases</a> 下载最新版本客户端，截止本文编写时间，最新版本为 <a title="https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.9.2" href="https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.9.2">4.1.9.2</a> ，下载后直接打开对应客户端进行配置,应用确定即可。</p>
+<p><img src="/_resources/5881ec932ee4420eb9e660c6593cce13.png" /></p>
+<p>如果使用chrome代理浏览器流量可以下载SwitchyOmega插件，直接安装到chrome的拓展程序里面即可</p>
+<p>下载地址： <a title="https://github.com/FelisCatus/SwitchyOmega/releases" href="https://github.com/FelisCatus/SwitchyOmega/releases">https://github.com/FelisCatus/SwitchyOmega/releases</a></p>
+<p>插件配置如下</p>
+<img width="890" height="369" src="/_resources/23d84f9f129942f69181266756f0f078.png" class="jop-noMdConv" />
+<p>一般情况下，至此即可成功代理浏览器流量</p>
+<h2 id="android客户端安装"><a title="android客户端安装" href="#android%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85"></a>android客户端安装</h2>
+<p>打开 <a title="https://github.com/shadowsocks/shadowsocks-android/releases" href="https://github.com/shadowsocks/shadowsocks-android/releases">https://github.com/shadowsocks/shadowsocks-android/releases</a> 下载最新版本客户端，截止本文编写时间，最新版本为 <a title="https://github.com/shadowsocks/shadowsocks-android/releases/tag/v5.0.5" href="https://github.com/shadowsocks/shadowsocks-android/releases/tag/v5.0.5">v5.0.5</a> ，下载后直接打开对应客户端进行配置,点击那个小飞机即可。</p>
+<p>配置跟windows端配置类似，挺简单的，自行摸索一会儿就可以搞定。</p>
+<p><img src="/_resources/a3b2cb7bf07c40a59f0fc0eb4f8480a6.png" /></p>
+<h2 id="参考资料"><a title="参考资料" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"></a>参考资料</h2>
+<ol>
+<li><a title="https://github.com/shadowsocks/shadowsocks-libev" href="https://github.com/shadowsocks/shadowsocks-libev">https://github.com/shadowsocks/shadowsocks-libev</a></li>
+<li><a title="https://github.com/shadowsocks/shadowsocks-android" href="https://github.com/shadowsocks/shadowsocks-android">https://github.com/shadowsocks/shadowsocks-android</a></li>
+<li><a title="https://github.com/shadowsocks/shadowsocks-windows" href="https://github.com/shadowsocks/shadowsocks-windows">https://github.com/shadowsocks/shadowsocks-windows</a></li>
+<li><a title="https://hub.docker.com/r/appso/shadowsocks-libev/" href="https://hub.docker.com/r/appso/shadowsocks-libev/">https://hub.docker.com/r/appso/shadowsocks-libev/</a></li>
+</ol>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[在家用群晖搭建wordpress博客_群晖 博客-CSDN博客]]></title>
+            <guid>57b5aec69ae3482886313cc72ded873e</guid>
+            <pubDate>Fri, 26 Apr 2024 17:45:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3><a id="t0" class="jop-noMdConv"></a></h3>
+<p>在家用群晖搭建wordpress博客</p>
+<p>首先需要一台群晖的NAS</p>
+<p><strong>什么是NAS？</strong></p>
+<p>NAS主要的作用就是网络储存，你可以理解为百度云，但这个百度云的服务器放在了家里。个人而言，有了NAS以后，家里的所有设备（台式电脑，笔记本电脑，手机，平板等等一切能联wifi的设备）都能访问这台NAS，共享资料。这样省去了经常需要互拷资料的麻烦，举个例子：有了NAS以后，你想用手机看电脑刚下载好的电影，你不需要拿出数据线拷电影，你只需要把电影拉进去NAS，然后手机访问这台NAS，就能观看。NAS能做的不仅仅是储存，它还能作为一台简单的服务器，完成一些相对简单的工作，例如在家自建博客（本博客就是建立在家里的NAS上的）。当然，NAS还有许许多多的优点，在此就不一一列举了。</p>
+<p>本人用的是群晖的DS214play，截止至2018年6月7日，升级款貌似已经更新到DS218play了，同时214play目前也已经停产。</p>
+<p>建立博客时群晖的版本号为：DSM 6.1.7-15284</p>
+<p>在建立博客时，看了许多教程，发现有些设置和现在大不相同，导致经常卡在某个地方，每个晚上不停地查资料不停地尝试，断断续续花了一周时间，才最终建立完成，当然还有许多地方个人觉得有需要再润色一下。</p>
+<p>或许本文里的一些设置，在不久的将来因为群晖的更新而失效，所以此文权当记录。</p>
+<p>好，废话少说，进入正题。</p>
+<p>一、安装wordpress博客</p>
+<p>博客程序有很多种，例如zblog，emlog等等等等，但最多人用的还是wordpress，个人也倾向于使用热门的东西，毕竟多人用，教程多，出了问题也好找解决方案。</p>
+<p>先去群晖的套件中心安装以下3个套件<a title="https://www.moks.cc/wp-content/uploads/2018/06/FK2O9JO1UOMZEPJG.png" href="https://www.moks.cc/wp-content/uploads/2018/06/FK2O9JO1UOMZEPJG.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/FK2O9JO1UOMZEPJG.png" /></a></p>
+<p>分别是：</p>
+<p>Web Station</p>
+<p>phpMyAdmin</p>
+<p>MariaDB 10（现在安装MariaDB的时候貌似要先设置密码了，记住用户名和密码就行）</p>
+<p>当安装完web station这个套件以后，在file station就能发现多了一个“web”的文件夹∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/PZRA2FK2I45SGHN.jpg" href="https://www.moks.cc/wp-content/uploads/2018/06/PZRA2FK2I45SGHN.jpg"><img src="https://www.moks.cc/wp-content/uploads/2018/06/PZRA2FK2I45SGHN.jpg" /></a></p>
+<p>于是我就在我的电脑那里添加了这个文件夹，方便处理数据∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607005739.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607005739.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607005739.png" /></a></p>
+<p>现在可以开始安装wordpress了，其实群晖的套件中心里也有wordpress，虽然安装起来比较方便，但不能自动更新，而且后续外网访问的设置貌似会有点问题，所以个人强烈建议不要在套件中心安装。</p>
+<p>百度“wordpress 下载” ，找到官网https://cn.wordpress.org/，然后把wordpress程序的压缩包下载下来。∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607010009.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607010009.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607010009.png" /></a></p>
+<p>直接拉进去“web”文件夹里面，然后解压缩，得到一个“wordpress”的文件夹∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607010052.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607010052.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607010052.png" /></a></p>
+<p>这个“wordpress”的文件夹就是博客网站了。</p>
+<p>接下来设置“wordpress”的文件夹的读写权限，不然安装过程会有问题，而且后续装完博客也无法安装新主题</p>
+<p>在file station里面打开“web”，找到“wordpress”，右击“wordpress”文件夹，点击“属性”，∇</p>
+<p><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607010410.png" /></p>
+<p>选择“权限“。把所有http的权限都改为”读取&amp;写入“。一开始可能不能修改，所以要先选择高级选项-使继承权限显式化。∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/SRP63RELPZZ5K@RG.jpg" href="https://www.moks.cc/wp-content/uploads/2018/06/SRP63RELPZZ5K@RG.jpg"><img src="https://www.moks.cc/wp-content/uploads/2018/06/SRP63RELPZZ5K@RG.jpg" /></a></p>
+<p>完成以后如下图∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/MW15V7HLJTREX406P.jpg" href="https://www.moks.cc/wp-content/uploads/2018/06/MW15V7HLJTREX406P.jpg"><img src="https://www.moks.cc/wp-content/uploads/2018/06/MW15V7HLJTREX406P.jpg" /></a></p>
+<p>在浏览器输入http://群晖IP/phpMyAdmin/ （注意大小写）∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607233549.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607233549.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607233549.png" /></a></p>
+<p>密码如果已经设置了，就填你设置的密码，如果没有，那就不用填。不过进去以后建议立刻修改密码，因为如果安装完博客以后，再去设置密码的话，会导致访问出错。这时候你就需要找到wordpress文件夹的wp-config.php文件，记事本打开，修改define(‘DB_PASSWORD’, ‘空间数据库最新密码’)</p>
+<p>进入以后新建数据库，用于存储以后博客的数据信息。名称为<strong>wordpress</strong>（数据库名字不一定要wordpress，你想改什么就什么，记住就好），排序规则选<strong>utf8_unicode_ci</strong>,如图∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/PCXMQDFPVAFCA15T0753.png" href="https://www.moks.cc/wp-content/uploads/2018/06/PCXMQDFPVAFCA15T0753.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/PCXMQDFPVAFCA15T0753.png" /></a></p>
+<p>数据库建立完成。</p>
+<p>打开“web station“-”虚拟主机“-”新建“。下图是我的配置∇</p>
+<p><img src="https://www.moks.cc/wp-content/uploads/2018/06/L862JB15DWUA_TCPC7I.jpg" /></p>
+<p>端口数字一般是随便填的，我填了<strong>666</strong>。“文档根目录“要选择你博客程序的所在位置，HTTP和PHP也记得要勾选。</p>
+<p>然后”PHP设置“-双击Default Profile配置文件-勾选全部扩展名（用新版群晖系统要这样做，之前旧版并不需要，导致卡在这里好久）∇<a title="https://www.moks.cc/wp-content/uploads/2018/06/SFA@H5Z6MCEQM4.jpg" href="https://www.moks.cc/wp-content/uploads/2018/06/SFA@H5Z6MCEQM4.jpg"><img src="https://www.moks.cc/wp-content/uploads/2018/06/SFA@H5Z6MCEQM4.jpg" /></a></p>
+<p>接下来就可以开始安装博客了</p>
+<p>在浏览器输入群晖的IP及端口号666, <a title="http://xn--IP-u37dl93g:666/" href="http://xn--IP-u37dl93g:666/">http://群晖IP:666/</a></p>
+<p>接下去就按照提示安装就可以了∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607234445.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607234445.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180607234445.png" /></a></p>
+<p>输入用户名和密码，数据库主机填<strong>127.0.0.1:3307</strong>点击提交∇</p>
+<p>（数据库主机一开始可以先试试填localhost，之前我装的时候填localhost就安装成功，但后来就不行了，这里也卡了很久）</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/RDVSUUGFR_E0FFO9B.png" href="https://www.moks.cc/wp-content/uploads/2018/06/RDVSUUGFR_E0FFO9B.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/RDVSUUGFR_E0FFO9B.png" /></a></p>
+<p>点击提交，提交以后没问题的话就没问题了，有问题的话就要看看是否前面的步骤设置出现问题。如果还是问题的话，慢慢查资料吧。</p>
+<p>下面就按照步骤来就好。∇<br />
+<a title="https://www.moks.cc/wp-content/uploads/2018/06/5D5V@XL047H9CUSDWCX.png" href="https://www.moks.cc/wp-content/uploads/2018/06/5D5V@XL047H9CUSDWCX.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/5D5V@XL047H9CUSDWCX.png" /></a></p>
+<p>至此，博客已经安装完毕。你只需要输入你群晖的IP地址+端口号，就能访问编辑你的博客了。</p>
+<p>在安装完博客以后，会遇到更新站点、主题和插件时，出现输入FTP账号密码问题。∇<a title="https://www.moks.cc/wp-content/uploads/2018/06/M02J2YUUOUG06O.png" href="https://www.moks.cc/wp-content/uploads/2018/06/M02J2YUUOUG06O.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/M02J2YUUOUG06O.png" /></a></p>
+<p>其实这个是因为php没有取得写入权限的问题。解决办法就是打开wp-config.php，在最后添加一段代码：<br />
+define(“FS_METHOD”, “direct”);<br />
+define(“FS_CHMOD_DIR”, 0777);<br />
+define(“FS_CHMOD_FILE”, 0777);</p>
+<p><strong>20190326更新</strong></p>
+<p>评论有反馈这个FTP设置失效，然后找到了新的解决方法供参考：<a title="http://zhanglinhai.com/archives/912" href="http://zhanglinhai.com/archives/912">http://zhanglinhai.com/archives/912</a></p>
+<p>二.外网访问的设置</p>
+<p>上面安装完博客以后,你只能在家里局域网访问你的博客,下面就来进行外网访问博客的设置.</p>
+<p>首先,你要设置好DDNS,可以参考我写的这篇<a title="https://www.moks.cc/?p=9" href="https://www.moks.cc/?p=9">《用自己的域名设置DDNS，外网访问群晖》</a></p>
+<p>设置好DDNS以后，再设置好端口转发∇<br />
+<a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608111529.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608111529.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608111529.png" /></a></p>
+<p>然后修改wordpress后台设置里的两个URL地址。∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608111517.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608111517.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608111517.png" /></a></p>
+<p>这时候用外网在浏览器输入www.moks.cc/:666,就能访问你的博客了。</p>
+<p><strong>其实到这里本文就可以结束了。</strong></p>
+<p><strong>但是</strong></p>
+<p>我觉得域名后面加了端口号一点都不酷炫，即使它是666</p>
+<p>所以接下来我要进一步设置，去掉端口号。</p>
+<p>首先进入群晖的web station，勾选“<strong>基于名称</strong>”-主机名填写你的域名，其他设置如图，点确定∇<a title="https://www.moks.cc/wp-content/uploads/2018/06/VL2DQ83TUF2VO@MST.jpg" href="https://www.moks.cc/wp-content/uploads/2018/06/VL2DQ83TUF2VO@MST.jpg"><img src="https://www.moks.cc/wp-content/uploads/2018/06/VL2DQ83TUF2VO@MST.jpg" /></a></p>
+<p>然后进入你的博客后台，修改两个地址为<strong><a title="https://xn--6qqv7i2xdt95b" href="https://xn--6qqv7i2xdt95b">https://你的域名</a></strong>（注意http<strong>s</strong>的<strong>s</strong>不要漏掉）。如图∇<br />
+<a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180608113118.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180608113118.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E5%9B%BE%E7%89%8720180608113118.png" /></a></p>
+<p>然后做好端口转发</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608113316.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608113316.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608113316.png" /></a></p>
+<p>都完成以后，你用万网输入https://你的域名（注意https的s不要漏掉），就能访问到你的博客了。</p>
+<p>这里稍微解释一下，http协议默认是80端口，https默认是443端口，其实我们平时输入网址的时候后面是有端口的，因为默认的关系所以直接隐去了。而国内的80端口基本都封掉了，所以我们博客打算域名无端口号访问，只能采用443端口。</p>
+<p>然后这时候你会发现，在访问的时候，你的浏览器会发出不安全警告∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/2HR12I_9LN8QOQIT7XBVQ.png" href="https://www.moks.cc/wp-content/uploads/2018/06/2HR12I_9LN8QOQIT7XBVQ.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/2HR12I_9LN8QOQIT7XBVQ.png" /></a></p>
+<p>其实可以不用理会，但是看着总是不舒服。所以还要进行下一步操作。具体请参考我的另一篇文章<a title="https://www.moks.cc/?p=124" href="https://www.moks.cc/?p=124">《群晖部署阿里云申请的免费证书》</a></p>
+<p>这样设置完以后，再访问的时候就不会有警告了，而且用chrome浏览器，还有一把绿色的小锁。∇<a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608174050.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608174050.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180608174050.png" /></a></p>
+<p>不过缺点也有，如果设备第一次访问的话，要打全网址，即https://www.moks.cc。前面的https://不能漏掉。</p>
+<p>感觉还没有www.moks.cc/:666方便。</p>
+<p>所以我打算再折腾一下，尽量输入更短的网址就能访问到博客。参考这篇<a title="https://www.moks.cc/?p=173" href="https://www.moks.cc/?p=173">《国内如何免备案免费设置域名转发》</a></p>
+<p>1号红色框填写你要跳转出去的域名，需要你另外申请一个域名，例如 moks2.cc ∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180610214940.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180610214940.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180610214940.png" /></a></p>
+<p>1号红框内什么都不用填，2号红框输入博客域名https://www.moks.cc（注意前面的https://也要输入完整），然后添加。∇</p>
+<p><a title="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180610215601.png" href="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180610215601.png"><img src="https://www.moks.cc/wp-content/uploads/2018/06/QQ%E6%88%AA%E5%9B%BE20180610215601.png" /></a></p>
+<p>然后再到阿里云那里修改DNS服务器，等生效就可以了，一般秒生效，然后你就可以直接输入新域名，它就会自动跳转到博客的真实网址，不需要再输入https://www.这一大串东西了。</p>
+<p>这里稍微解释一下，可能有点绕晕了。</p>
+<p>本博客是建在家里的群晖上面的，地址为https://www.moks.cc。</p>
+<p>如果我们直接输入www.moks.cc或者moks.cc的话，默认是指向http://www.moks.cc（注意没s），因为国内封掉80端口，所以http://www.moks.cc这个网址是访问不了的，如果要解除80端口封禁，就要备案，而备案一定要购买国内主机才行，那么就失去了群晖建站的意义了，本来我在群晖建站就是打算物尽其用，看上免费这一点。</p>
+<p>但是我们可以通过上述的方法，用另一个域名转发来绕开80端口。</p>
+<p>这时候你可能有疑问，为什么不能用moks.cc这个域名来自己转发给自己呢？其实一开始我也是这么想的，用moks.cc指向https://www.moks.cc/，但是啊，moks.cc这个域名本来就已经解析有服务器了（本站为例是DNSPOD)，用于群晖的DDNS，DNSPOD需要备案才能设置转发，而备案又要在国内买空间…这时候再设置转发的话，就需要再另外添加解析负责转发的服务器。当然，也不是不可以这样做，但会造成dns解析混乱，我实际操作以后，网站经常会登不上去，ping了一下域名，发现ping到了别的IP地址，不是网站的真正IP地址，所以这个方法本人不太推荐。</p>
+<p>其实这里还有一个思路，解析和转发都用同一个DNS服务商。但是需要满足的条件：</p>
+<p>1.国外的。因为国内的需要备案才能转发</p>
+<p>2.以我为例，可以绑定群晖或者华硕的。</p>
+<p>但是，如果用国外的DDNS，万一被墙了就麻烦了，后续变更DNS服务商也是一件麻烦的事。</p>
+<p>本文到此基本可以结束了。</p>
+<p>在家用群晖建站，优点自然是免费，不需要每年付一笔钱给云主机商，而且容量随便你加，也不用在意流量问题（不过一般个人博客流量都不会很大就是了）</p>
+<p>但是相反的缺点也很明显，在国内，如果不购买主机建站的话，80端口是用不了的，这就造成了想要通过简短的域名访问网站非常困难。而且用群晖建站相当于把群晖暴露在外网，容易受到攻击，特别是群晖作为一个家庭甚至公司的储存服务器，里面保存的资料一般来说还是挺重要的，所以仅建议自娱自乐随便玩玩。</p>
+<p><strong>2018.8.26更新</strong></p>
+<p>最近买了个vps搭建SS，空间还有富余，打算找个时间把博客搬到那上面去试试。这样的话基本就解决掉80端口问题和群晖不安全问题了。</p>
+<p><strong>全文完</strong></p>
+<p>参考文章：</p>
+<p>1.外网访问群晖上的博客详细教程</p>
+<p><a title="https://post.smzdm.com/p/536484/" href="https://post.smzdm.com/p/536484/">https://post.smzdm.com/p/536484/</a></p>
+<p>2.说说黑群晖和极路由那点事儿 篇二：满负荷使用你的NAS——零基础搭建个人博客及论坛</p>
+<p><a title="https://post.smzdm.com/p/310848/" href="https://post.smzdm.com/p/310848/">https://post.smzdm.com/p/310848/</a></p>
+<p>3.不用群晖套件架设wordpress博客站点</p>
+<p><a title="http://www.gebi1.com/forum.php?mod=viewthread&amp;tid=258148&amp;_dsign=54f0bdbd" href="http://www.gebi1.com/forum.php?mod=viewthread&amp;tid=258148&amp;_dsign=54f0bdbd">http://www.gebi1.com/forum.php?mod=viewthread&amp;tid=258148&amp;_dsign=54f0bdbd</a></p>
+<p>4.黑群晖+梅林路由：外网访问NAS整体解决方案</p>
+<p><a title="https://post.smzdm.com/p/568990/" href="https://post.smzdm.com/p/568990/">https://post.smzdm.com/p/568990/</a></p>
+<p>5.群晖DS418PLAY有什么好玩意之 篇一：DNSPOD外网访问群晖DSM</p>
+<p><a title="https://post.smzdm.com/p/622921/" href="https://post.smzdm.com/p/622921/">https://post.smzdm.com/p/622921/</a></p>
+<p>6.How to host a website on Synology NAS</p>
+<p><a title="https://www.synology.com/en-us/knowledgebase/DSM/tutorial/Application/How_to_host_a_website_on_Synology_NAS" href="https://www.synology.com/en-us/knowledgebase/DSM/tutorial/Application/How_to_host_a_website_on_Synology_NAS">https://www.synology.com/en-us/knowledgebase/DSM/tutorial/Application/How_to_host_a_website_on_Synology_NAS</a></p>
+<p>7.群晖下搭建wordpress博客站点</p>
+<p><a title="http://www.gebi1.com/thread-257802-1-1.html" href="http://www.gebi1.com/thread-257802-1-1.html">http://www.gebi1.com/thread-257802-1-1.html</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[IBus输入法安装和设置_ibus setup-CSDN博客]]></title>
+            <guid>91b2b8ceea194fa8865fbf56793e3efe</guid>
+            <pubDate>Fri, 26 Apr 2024 17:42:17 GMT</pubDate>
+            <content:encoded><![CDATA[<p>IBus输入法安装和设置</p>
+<p>  IBus是一个<a title="https://so.csdn.net/so/search?q=%E6%A1%86%E6%9E%B6&amp;spm=1001.2101.3001.7020" href="https://so.csdn.net/so/search?q=%E6%A1%86%E6%9E%B6&amp;spm=1001.2101.3001.7020">框架</a>，支持多种输入法。</p>
+<p>安装IBus框架：<br />
+在终端输入命令:<br />
+<strong>sudo apt-get install ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4</strong></p>
+<p>启用IBus框架：<br />
+在终端输入:<br />
+<strong>im-switch -s ibus</strong><br />
+重新启动X（也可以重启电脑）</p>
+<p>安装拼音引擎：<br />
+在终端输入:<br />
+<strong>sudo apt-get install ibus-pinyin</strong></p>
+<p>设置ibus-pinyin，在终端输入:<br />
+<strong>/usr/lib/ibus-pinyin/ibus-setup-pinyin</strong></p>
+<p>切换中引文标点符号的全角与半角的快捷键是&lt;<strong>Ctrl+.</strong>&gt; 按下ctrl键再按点</p>
+<p>安装sunpinyin模块，在终端输入:<br />
+sudo apt-get install ibus-sunpinyin</p>
+<p>设置ibus-sunpinyin，在终端输入:<br />
+/usr/lib/ibus-sunpinyin/ibus-setup-sunpinyin</p>
+<p>安装五笔引擎：<br />
+在终端输入:<br />
+sudo apt-get install ibus-table-wubi</p>
+<p>设置IBus框架：<br />
+在终端输入:<br />
+ibus-setup</p>
+<p>Kubuntu下使用IBus：<br />
+在终端输入:<br />
+sudo apt-get install gnome-icon-theme<br />
+其他同上</p>
+<p>找回消失的IBus图标：<br />
+在终端输入:<br />
+ibus-daemon -drx</p>
+<p>其他语言输入法：<br />
+安装 ibus-m17n 包即可。<br />
+sudo apt-get install ibus-m17n<br />
+这个软件包包含了几乎所有除了英语，中日韩等的其他输入法，如：阿拉伯语，阿姆哈拉语，阿萨姆语，阿萨帕斯坎诸语，奥杰布瓦语，白俄罗斯语，波斯语，藏语，傣语，丹麦语，迪维希语，俄语，法语，梵语，高棉语，格鲁吉亚语，古典希腊语，古吉拉特语，哈萨克语，捷克语，卡纳达语，克里语，克罗地亚语，克什米尔语，老挝语，马拉提语，马拉雅拉姆语，孟加拉语，缅甸语，尼泊尔语，旁遮普语，普什图语，日语，瑞典语，瑞典，塞尔维亚语，僧加罗语，世界语，斯洛伐克语，四川彝族语，泰卢固语，泰米尔语，泰语，维吾尔语，乌兹别克语，乌尔都语，希伯来语，现代希腊语，信德语，亚美尼亚语，伊努伊特语，依地语，印地语，越南，占语，朝鲜，latex输入特殊符号，input-pad等。</p>
+<p>  如果您使用的是 fcitx，请安装相应的包。<br />
+sudo apt-get install fcitx-m17n</p>
+<p>自定义码表输入法及设置：<br />
+安装好ibus后,在目录:/usr/share/下会有:<br />
+ibus,ibus-pinyin,ibus-table<br />
+三个文件夹.</p>
+<p>其中ibus-table文件夹中用于存放五笔之类的输入法内容.其下<br />
+icons文件夹用于存放输入法显示的图片,<br />
+tables文件夹用于存放码表(db格式)(SQlite数据库)<br />
+我们可以使用ibus提供的工具把自己的码表和参数生成db文件<br />
+导入到ibus中，生成自己的输入法使用,</p>
+<p>ibus提供了一个样本文件:template.txt 以便参考</p>
+<p>其大概格式如下:<br />
+---------------------------------------------------------------<br />
+### 该码表文件必须按UTF-8格式编码保存<br />
+### 注释行以### 开头而不是一个#<br />
+### 它起源于scim码表格式，所以你可以用scim-tables码表来修改<br />
+SCIM_Generic_Table_Phrase_Library_TEXT<br />
+VERSION_1_0<br />
+### 开始定义<br />
+BEGIN_DEFINITION</p>
+<p>### License<br />
+LICENSE = LGPL<br />
+### UUID用于标识该表以便于区分其他的表，你可以在终端中使用<br />
+### uuidgen命令产生一个uuid给该表<br />
+UUID = c9851827-0abe-12ed-8db5-010b9d51ffed</p>
+<p>### 版本号,但不要太长<br />
+### For example the last modified date of this file.<br />
+### This number must be less than 2^32.<br />
+### Just make your table version-able<br />
+SERIAL_NUMBER = 20090218</p>
+<p>### 输入法图标，可以是pygtk识别的图片格式，一般用png,svg格式<br />
+### 该图标放在icons目录<br />
+ICON = ibus-table.svg</p>
+<p>### 默认的表名，必填<br />
+NAME = Table</p>
+<p>### 本地名，选添<br />
+NAME.zh_CN = 形码<br />
+NAME.zh_HK = 形码<br />
+NAME.zh_TW = 形码</p>
+<p>###  描述可填可不填<br />
+DESCRIPTION = This is a template engine table for IBus Table.</p>
+<p>### 该码表支持的语言<br />
+### 只用"zh_CN"则认为是zh_CN<br />
+### 但是如果是zh_CN,zh_HK或其他zh_XX则认为是zh<br />
+### and "en_US, zh_CN" will be just ignored.<br />
+LANGUAGES = zh_CN,zh_SG,zh_TW,zh_HK</p>
+<p>### 该表作者<br />
+AUTHOR = Z ZZ &lt;<a title="mailto:XXX@gmail.com" href="mailto:XXX@gmail.com">XXX@gmail.com</a>&gt;</p>
+<p>### 提示字符，它将被显示在状态栏中，CN会被“中”字代替<br />
+STATUS_PROMPT = CN</p>
+<p>### 可输入的字符<br />
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyz</p>
+<p>### Layout<br />
+LAYOUT = us</p>
+<p>### 每个字或短语的最大输入长度<br />
+MAX_KEY_LENGTH = 4</p>
+<p>### 自动上屏功能默认关闭FALSE(TRUE打开)<br />
+### 有人说五笔不能自动上屏把这修改成TRUE就好了<br />
+AUTO_COMMIT = FALSE</p>
+<p>### 标点符号 默认是全角格式<br />
+DEF_FULL_WIDTH_PUNCT = TRUE</p>
+<p>### 全角字符默认关闭<br />
+DEF_FULL_WIDTH_LETTER = FALSE</p>
+<p>### 是否允许用户定义词组短语，默认允许<br />
+### 但你需要定义构词法则<br />
+### 开启后使用该表时定义词组方法:<br />
+### 先输入词组中的每一个字,输完选字时用Ctrl+"数字键" 选取<br />
+### 词组中的第一个字,然后输入词组中的第二个字,<br />
+### 输完选字时用Ctrl+"数字键" 选取<br />
+### 直到输入该词组的最后一个字,输完后直接用数字键选则<br />
+### 如此,这一词组便录入完闭,以后即可按后面定义的词组法则来输入该词<br />
+USER_CAN_DEFINE_PHRASE = TRUE</p>
+<p>### 是否允许拼音模式，默认允许，该功能只是为中文设计<br />
+### 如果你的输入法不是中文的可以关闭它(似乎没什么用??注音模式?反正我不会用)<br />
+PINYIN_MODE = TRUE</p>
+<p>### 字,词组,短语频率调节.默认允许<br />
+DYNAMIC_ADJUST = TRUE</p>
+<p>### Some characters whose frequencies should be fix all the time, e.g.<br />
+### some punctuations<br />
+### NO_CHECK_CHARS =</p>
+<p>### 用户自定义词组后该词输入规则<br />
+### ce表示词组长度等于，例如ce2表示词组长度等于2，<br />
+### ca表示词组长度等于或大于，<br />
+### p21表示词组中第2个字的第一笔（对应的按键）<br />
+### 每一个规则用;号隔开<br />
+RULES = ce2:p11+p12+p21+p22;ce3:p11+p21+p22+p31;ca4:p11+p21+p31+p41<br />
+### 以上规则表示,两字词按每字前2个键输入,3字词按1字1键2字1,2键,3字1键输入...<br />
+END_DEFINITION<br />
+### 开始码表数据<br />
+### 码表格式为：“输入建\t(制表符)字词\t(制表符)频率\n(换行)”<br />
+### From left to right, the 1st column are the input key combination that you<br />
+### entered via keyboard; the 2nd column are presented character or phrase of<br />
+### the key combination you want; the 3rd column are frequency of the character<br />
+### or phrase.<br />
+BEGIN_TABLE<br />
+input_keys aim_chars freq<br />
+input_keys aim_chars freq<br />
+input_keys aim_chars freq<br />
+END_TABlE</p>
+<p>### 有些输入法对词组中的字使用不同的码表，例如郑码，它需要定义guocima<br />
+### 如果你不许要请把下面的注释掉<br />
+### Since some input methods use different table for every character to make<br />
+### phrase, such as ZhengMa, they need explict define the goucima (the<br />
+### phrase-building code for the given character), the format of every entry is<br />
+### "character\tgoucima\n".<br />
+### For the input method which just use the full code as word-building code<br />
+### just skip this field. The ibus-table will build the codes needed from<br />
+### above TABLE.<br />
+### if you don't need different word-building code, please comment out the<br />
+### next few lines with ###, just like these lines you are look at now.<br />
+BEGIN_GOUCI<br />
+character_1 goucima_1<br />
+character_1 goucima_2<br />
+END_GOUCI</p>
+<p>  去掉注释的样本如下:<br />
+SCIM_Generic_Table_Phrase_Library_TEXT<br />
+VERSION_1_0</p>
+<p>BEGIN_DEFINITION</p>
+<p>UUID = c88e7342-13ae-498d-9442-fc92ad1d85ee</p>
+<p>SERIAL_NUMBER = 1</p>
+<p>ICON = wubi98.svg</p>
+<p>NAME = WuBi98</p>
+<p>NAME.zh_CN = 五笔98<br />
+NAME.zh_HK = 五笔98<br />
+NAME.zh_TW = 五笔98</p>
+<p>LANGUAGES = zh_CN,zh_SG,zh_TW,zh_HK</p>
+<p>AUTHOR = SomeBody</p>
+<p>STATUS_PROMPT = CN</p>
+<p>VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxy</p>
+<p>MAX_KEY_LENGTH = 4</p>
+<p>AUTO_COMMIT = TRUE</p>
+<p>DEF_FULL_WIDTH_PUNCT = FALSE</p>
+<p>DEF_FULL_WIDTH_LETTER = FALSE</p>
+<p>USER_CAN_DEFINE_PHRASE = TRUE</p>
+<p>PINYIN_MODE = TRUE</p>
+<p>DYNAMIC_ADJUST = TRUE</p>
+<p>RULES = ce2:p11+p12+p21+p22;ce3:p11+p21+p31+p32;ca4:p11+p21+p31+p-11</p>
+<p>END_DEFINITION</p>
+<p>BEGIN_TABLE<br />
+abc      工      100<br />
+aaa      内置词组      50<br />
+bbb      内置短语      101<br />
+END_TABLE<br />
+---------------------------------------------------------------</p>
+<p>根据个人喜好写完上述文件,和"BEGIN_TABLE"与"END_TABLE"之间的码表保存好, 然后到终端用命令:<br />
+ibus-table-createdb -s 你的码表名<br />
+生成该表的db文件,然后用命令:<br />
+sudo cp 你的码表名.db /usr/share/ibus-table/tables/ <br />
+放到ibus目录中,重启后就可以使用了. 当然了还有输入法的图片:<br />
+sudo cp 输入法图片 /usr/share/ibus-table/icons/</p>
+<p><a title="http://wiki.ubuntu.org.cn/IBus" href="http://wiki.ubuntu.org.cn/IBus">http://wiki.ubuntu.org.cn/IBus</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[rsync远程同步 - 掘金]]></title>
+            <guid>aa0a743753c34714b4fe641b882f2547</guid>
+            <pubDate>Fri, 26 Apr 2024 14:57:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="什么是rsync">什么是rsync</h2>
+<p>一款快速增量备份工具</p>
+<ul>
+<li>Remote Sync，远程同步</li>
+<li>支持本地复制，或者与其他SSH、rsync主机同步</li>
+<li>官方网站：<a title="http://rsync.samba.org/" href="https://link.juejin.cn/?target=http%3A%2F%2Frsync.samba.org%2F">rsync</a></li>
+</ul>
+<h2 id="rsync远程同步">rsync远程同步</h2>
+<p>rsync（Remote sync，远程同步）是一个开源的快速备份工具，可以在不同主机之间镜像同步整个目录树，支持增量备份，并保持链接和权限，且采用优化的同步算法，传输前执行压缩，因此非常适用于异地备份、镜像服务器等应用。</p>
+<p>在远程同步任务中，负责发起rsync同步操作的客户机称为发起端，而负责响应来自客户机的rsync同步操作的服务器称为同步源。在同步过程中，同步源负责提供文件的原始位置，发起端应对该位置具有读取权限。</p>
+<p>例：A服务器同步B服务器的数据，B服务器就是备份源 反过来，B服务器同步A服务器的数据，那么A服务器就是备份源</p>
+<img width="756" height="280" src="/_resources/09a5e9f452274f4b96ef6611924a92a7.webp" class="jop-noMdConv" />
+<h2 id="rsync特性">rsync特性</h2>
+<ul>
+<li>支持拷贝特殊文件，如连接文件、设备等。</li>
+<li>可以有排除指定文件或目录同步的功能，相当于打包命令tar的排除功能。</li>
+<li>可以做到保持原文件或目录的权限、时间、软硬链接、属主、组等所有属性均不改变 –p。</li>
+<li>可以实现增量同步，既只同步发生变化的数据，因此数据传输效率很高（tar-N）。</li>
+<li>可以使用rcp、rsh、ssh等方式来配合传输文件（rsync本身不对数据加密）。</li>
+<li>可以通过socket（进程方式）传输文件和数据（服务端和客户端）*****。</li>
+<li>支持匿名的活认证（无需系统用户）的进程模式传输，可以实现方便安全的进行数据备份和镜像。</li>
+</ul>
+<h2 id="rsync生产场景">rsync生产场景</h2>
+<ul>
+<li>借助cron+rsync把所有客户端服务器数据同步到备份服务器。</li>
+<li>针对公司重要数据备份混乱状况和领导提出备份全网数据的解决方案。</li>
+<li>通过本地打包备份，然后rsync结合inotify应用把全网数统一备份到一个固定存储服务器，然后在存储服务器上通过脚本检查并报警管理员备份结果。</li>
+<li>定期将IDC机房的数据 备份公司的内部服务器，防止机房地震及火灾问题导致数据丢失。</li>
+<li>实时同步，解决存储服务器等的单点问题。</li>
+</ul>
+<h3 id="rsync同步源">rsync同步源</h3>
+<ul>
+<li>
+<p>在远程同步任务中，负责发起 rsync 同步操作的客户机称为客户端，而负责响应来自客户端的 rsync 同步操作的服务器称为备份源，也称之为同步源</p>
+<ul>
+<li>在下行同步（下载）中，同步源负责提供文档的原始位置，发起端应对该位置有读取权限</li>
+<li>在上行同步（上传）中，同步源负责提供文档的目标位置，发起端应对该位置具有写入权限</li>
+</ul>
+</li>
+</ul>
+<img width="756" height="473" src="/_resources/c04d734188084de58671310b1cb90038.webp" class="jop-noMdConv" />
+<h3 id="配置-rsync-下行同步">配置 Rsync 下行同步</h3>
+<h4 id="配置rsync源服务器">配置rsync源服务器</h4>
+<div><pre class="hljs"><code>systemctl stop firewalld.service
+systemctl disable firewalld.service
+setenforce <span class="hljs-number">0</span>
+
+rpm -q rsync                   <span class="hljs-comment">#一般系统已默认安装rsync </span>
+<span class="hljs-comment">#建立/etc/rsyncd.conf配置文件</span>
+vim <span class="hljs-regexp">/etc/</span>rsyncd.conf           <span class="hljs-comment">#添加以下配置项</span>
+
+uid = root
+gid = root
+use chroot = yes                <span class="hljs-comment">#禁锢在源目录</span>
+address = <span class="hljs-number">192.168</span>.<span class="hljs-number">239.20</span>         <span class="hljs-comment">#监听地址</span>
+port <span class="hljs-number">873</span>                       <span class="hljs-comment">#监听端口tcp/udp 873，可通过cat/etc/services I grep rsync查看</span>
+log file = <span class="hljs-regexp">/var/</span>log/rsyncd.log   <span class="hljs-comment">#日志文件位置</span>
+pid file = <span class="hljs-regexp">/var/</span>run/rsyncd.pid   <span class="hljs-comment">#存放进程ID的文件位置</span>
+hosts allow =<span class="hljs-number">192.168</span>.<span class="hljs-number">239.0</span>/<span class="hljs-number">24</span>   <span class="hljs-comment">#允许访问的客户机地址</span>
+dont compress   = *.gz *.tgz *.zip *.z *.Z *.rpm *.deb *.bz2<span class="hljs-comment">#同步时不再压缩的文件类型</span>
+
+[wwwroot]                                   <span class="hljs-comment">#共享模块名称</span>
+path = <span class="hljs-regexp">/var/</span>www/html                        <span class="hljs-comment">#源目录的实际路径</span>
+comment = folder of web
+read only = yes                             <span class="hljs-comment">#是否为只读</span>
+auth users = backuper                       <span class="hljs-comment">#授权账户，多个账号以空格分隔</span>
+secrets file=<span class="hljs-regexp">/root/</span>rsnyc_backupers         <span class="hljs-comment">#存放账户信息的数据文件</span>
+<span class="hljs-comment">#如采用匿名的方式，只要将其中的“auth users"和“secrets file”配置项去掉即可</span>
+
+<span class="hljs-comment">#为备份账户创建数据文件</span>
+vim <span class="hljs-regexp">/root/</span>rsnyc_backupers
+backuper:<span class="hljs-number">1999612</span>                           <span class="hljs-comment">#无须建立同名系统用户</span>
+chmod <span class="hljs-number">600</span> <span class="hljs-regexp">/root/</span>rsnyc_backupers
+<span class="hljs-comment">#保证所有用户对源目录/var/www/html都有读取权限</span>
+chmod +r <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/html/</span>
+ls -d <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/html/</span>
+
+<span class="hljs-comment">#启动rsync服务程序</span>
+rsync --daemon                  <span class="hljs-comment">#启动rsync服务，以独立监听服务的方式（守护进程）运行</span>
+
+<span class="hljs-comment">#关闭服务</span>
+kill $(cat <span class="hljs-regexp">/var/</span>run/rsyncd.pid)
+rm -rf <span class="hljs-regexp">/var/</span>run/rsyncd.pid</code></pre></div>
+<p><strong>关闭防火墙</strong></p>
+<img width="756" height="93" src="/_resources/0da87a3cbaab4c50a36854e94d55e5e7.webp" class="jop-noMdConv" />
+<p><strong>编辑rsync配置文件</strong></p>
+<img width="756" height="555" src="/_resources/57f93eb5210749878b51f9a15e53ce33.webp" class="jop-noMdConv" />
+<p><strong>编辑用户账号文件，固定格式为[名称:密码]，一行一个，并赋予文件权限及创建共享目录赋予读权限开启服务</strong></p>
+<img width="756" height="43" src="/_resources/2e872e1c1a264513b0867e627156d66a.webp" class="jop-noMdConv" />
+<img width="756" height="73" src="/_resources/d899026f81754d819b2423da20b7053c.webp" class="jop-noMdConv" />
+<p><img src="/_resources/73da6405d65e46849a7e6bb075ecb1ce.webp" /></p>
+<h4 id="发起端">发起端</h4>
+<div><pre class="hljs"><code>基本格式
+rsynd <span class="hljs-selector-attr">[选项]</span> 原始位置 目标位置</code></pre></div>
+<p>常用选项：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-r</td>
+<td>递归模式，包含目录及子目录中的所有文件。</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>对于符号链接文件仍然复制为符号链接文件。</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示同步过程的详细（verbose）信息。</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>在传输文件时进行压缩（compress）。</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>归档模式，保留文件的权限、属性等信息，等同于组合选项“-rlptgop"。</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>保留文件的权限标记。</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>保留文件的时间标记。</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>保留文件的属组标记（仅超级用户使用）。</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>保留文件的属主标记（仅超级用户使用）。</td>
+</tr>
+<tr>
+<td>-H</td>
+<td>保留硬连接文件。</td>
+</tr>
+<tr>
+<td>-A</td>
+<td>保留ACL属性信息。</td>
+</tr>
+<tr>
+<td>-D</td>
+<td>保留设备文件及其他特殊文件。</td>
+</tr>
+<tr>
+<td>--delete</td>
+<td>删除目标位置有而原始位置没有的文件。</td>
+</tr>
+<tr>
+<td>--checksum</td>
+<td>根据校验和（而不是文件大小、修改时间）来决定是否跳过文件。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>服务器在共享目录存放文件</strong></p>
+<p><img src="/_resources/d995842ec1494db887f3d834bd071223.webp" /></p>
+<p><strong>将指定的资源下载到本地/data目录下进行备份。</strong><br />
+<strong>格式一：</strong></p>
+<div><pre class="hljs"><code>rsync  -avz backuper @<span class="hljs-number">192.168.239.20</span><span class="hljs-number">::</span>wwwroot /data</code></pre></div>
+<p><img src="/_resources/da49c54343614eeea0914854db30f78e.webp" /></p>
+<p><strong>格式二：</strong></p>
+<div><pre class="hljs"><code>rsync -avz rsync:<span class="hljs-regexp">//</span>backuper @<span class="hljs-number">192.168</span>.<span class="hljs-number">239.20</span><span class="hljs-regexp">/wwwroot  /</span>data/</code></pre></div>
+<p><img src="/_resources/d15b1bee9631471087a042adb4add17d.webp" /></p>
+<h4 id="免交互">免交互</h4>
+<div><pre class="hljs"><code>格式配置：
+echo <span class="hljs-string">"123123"</span> &gt;<span class="hljs-regexp">/etc/</span>server.pass 
+
+chmod <span class="hljs-number">600</span> <span class="hljs-regexp">/etc/</span>server.pass 
+rsync -az --<span class="hljs-keyword">delete</span> --password-<span class="hljs-keyword">file</span>=<span class="hljs-regexp">/etc/</span>server.pass backuper@<span class="hljs-number">192.168</span>.<span class="hljs-number">239.20</span>::wwwroot <span class="hljs-regexp">/data/</span>
+#为了在同步过程中不用输入密码，需要创建一个密码文件，保存backuper用户的密码，如<span class="hljs-regexp">/etc/</span>server.pass。在执行rsync 同步时使用选项“--password-<span class="hljs-keyword">file</span>=<span class="hljs-regexp">/etc/</span>server.pass<span class="hljs-string">"指定即可。</span></code></pre></div>
+<p><img src="/_resources/e2ec0fea70ac4eb6af4c5c713e98f18b.webp" /></p>
+<p><strong>也可以通过计划性任务对数据进行定期同步</strong></p>
+<div><pre class="hljs"><code>crontab -e                               <span class="hljs-comment">#添加计划性任务</span>
+<span class="hljs-number">30</span> <span class="hljs-number">22</span> * * * <span class="hljs-regexp">/usr/</span>bin<span class="hljs-regexp">/rsync -az --delete --password-file=/</span>etc<span class="hljs-regexp">/server.pass backuper@192.168.239.20::wwwroot /</span>data/  <span class="hljs-comment">#每天的10：30对数据进行同步</span>
+systemctl restart crond                  <span class="hljs-comment">#重启计划任务服务  </span>
+systemctl enable crond                   <span class="hljs-comment">#设置开机自启</span></code></pre></div>
+<h4 id="rsync实时同步">rsync实时同步</h4>
+<h4 id="定期同步的不足">定期同步的不足</h4>
+<ul>
+<li>执行备份的时间固定，延迟明显、实时性差</li>
+<li>当同步源长期不变化时，密集的定期任务是不必要的</li>
+</ul>
+<h4 id="实时同步的优点">实时同步的优点</h4>
+<ul>
+<li>一旦同步源出现变化，立即启动备份</li>
+<li>只要同步源无变化，则不执行备份</li>
+</ul>
+<h2 id="linux内核的inotify机制">Linux内核的inotify机制</h2>
+<ul>
+<li>从版本2.6.13开始提供</li>
+<li>可以监控文件系统的变动情况，并做出通知响应</li>
+<li>辅助软件：inotify-tools</li>
+</ul>
+<p><img src="/_resources/bd15bf9b6f1242a596d8497573a834bd.webp" /></p>
+<h3 id="配置rsyncinotify-实时同步">配置Rsync+Inotify 实时同步</h3>
+<ul>
+<li>使用inotify通知接口，可以用来监控文件系统的各种变化情况，如文件存取、删除、移动、修改等。利用这一机制，可以非常方便地实现文件异动告警、增量备份，并针对目录或文件的变化及时作出响应。</li>
+<li>将inotify机制与rsync工具相结合，可以实现触发式备份（实时同步），即只要原始位置的文档发生变化，则立即启动增量备份操作；否则处于静默等待状态。</li>
+<li>因为 inotify 通知机制由 Linux 内核提供，因此主要做本机监控，在触发式备份中应用时更适合上行同步</li>
+</ul>
+<h4 id="修改rsync源服务器配置">修改rsync源服务器配置</h4>
+<div><pre class="hljs"><code>vim <span class="hljs-regexp">/etc/</span>rsyncd.conf
+read only = no                     <span class="hljs-comment">#关闭只读 上行同步需要可以写</span>
+kill $(cat <span class="hljs-regexp">/var/</span>run/rsyncd.pid)   <span class="hljs-comment">#杀死进程等于关闭服务</span>
+rm -rf <span class="hljs-regexp">/var/</span>run/rsyncd.pid         <span class="hljs-comment">#要将服务的pid文件删除否则重启服务可能会起不来会报错</span>
+rsync --daemon                     <span class="hljs-comment">#重启服务</span>
+netstat -anpt | grep rsync         <span class="hljs-comment">#查看服务是否启动</span>
+chmod <span class="hljs-number">777</span> <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/html/</span>           <span class="hljs-comment">#给共享目录可读可写可执行权限</span></code></pre></div>
+<p><img src="/_resources/173f2e7f8d2246ee80cf269619ba479a.webp" /></p>
+<p><img src="/_resources/88845def54c5496baf92f1775fe600e6.webp" /></p>
+<h4 id="调整客户机inotify-内核参数">调整客户机inotify 内核参数</h4>
+<ul>
+<li>在Linux内核中，默认的inotify机制提供了三个调控参数：max_queue_events（监控事件队列，默认值为16384）、max_user_instances（最多监控实例数，默认值为128）、max_user_watches（每个实例最多监控文件数，默认值为8192）。当要监控的目录、文件数量较多或者变化较频繁时，建议加大这三个参数的值。</li>
+</ul>
+<div><pre class="hljs"><code><span class="hljs-comment">#查看参数值</span>
+cat <span class="hljs-regexp">/proc/</span>sys<span class="hljs-regexp">/fs/i</span>notify/max_queued_events
+cat <span class="hljs-regexp">/proc/</span>sys<span class="hljs-regexp">/fs/i</span>notify/max_user_instances 
+cat <span class="hljs-regexp">/proc/</span>sys<span class="hljs-regexp">/fs/i</span>notify/max_user_watches
+
+vim <span class="hljs-regexp">/etc/</span>sysctl.conf 
+fs.inotify.max_queued_events = <span class="hljs-number">16384</span>
+fs.inotify.max_user_instances = <span class="hljs-number">1024</span>
+fs.inotify.max_user_watches = <span class="hljs-number">1048576</span>
+
+sysctl -p  <span class="hljs-comment">#加载参数</span></code></pre></div>
+<p><img src="/_resources/de0e2944599842499d222e3e63afe388.webp" /></p>
+<p><img src="/_resources/1f8dfb0e21bb4b09b8089a19b534fa9e.webp" /></p>
+<p><img src="/_resources/05f33ee967c2449ead5d0d7f027bacdc.webp" /></p>
+<h4 id="在客户机安装inotify-tools">在客户机安装inotify-tools</h4>
+<ul>
+<li>用inotify机制还需要安装 inotify-tools，以便提供inotifywait、inotifywatch 辅助工具程序，用来监控、汇总改动情况。</li>
+<li>inotifywait：可监控modify（修改）、create（创建）、move（移动）、delete（删除）、attrib（属性更改）等各种事件，一有变动立即输出结果。</li>
+<li>inotifywatch：可用来收集文件系统变动情况，并在运行结束后输出汇总的变化情况。</li>
+</ul>
+<div><pre class="hljs"><code>tar zxvf inotify-tools<span class="hljs-number">-3.14</span>.tar.gz    <span class="hljs-meta">#将软件包拉入/opt目录解压</span>
+cd /opt/inotify-tools<span class="hljs-number">-3.14</span>            <span class="hljs-meta">#进入目录</span>
+./configure &amp;&amp; <span class="hljs-built_in">make</span> &amp;&amp; <span class="hljs-built_in">make</span> install   <span class="hljs-meta">#配置、编译安装</span>
+<span class="hljs-meta">#可以先执行*inotifywait”命令，然后另外再开启一个新终端向/data目录下添加文件、移动文件，在原来的终端中跟踪屏幕输出结果。</span>
+inotifywait -mrq -e modify,<span class="hljs-keyword">create</span>,move,<span class="hljs-keyword">delete</span> /data
+<span class="hljs-meta">#选项“-e"：用来指定要监控哪些事件</span>
+<span class="hljs-meta">#选项“-m”：表示持续监控</span>
+<span class="hljs-meta">#选项“-r"：表示递归整个目录</span>
+<span class="hljs-meta">#选项“-q”：简化输出信息</span></code></pre></div>
+<p><img src="/_resources/960582c863a54b34ac652470e29ace04.webp" /></p>
+<p><img src="/_resources/be457cc3acc54d389a801389bba374c2.webp" /></p>
+<p><img src="/_resources/00844888e3f44b5997f06a7427e12f1d.webp" /></p>
+<p><strong>此时在开个终端对数据/data目录文件进行修改</strong></p>
+<p><img src="/_resources/295e8d184f0f45d09eb12225b1507cb8.webp" /></p>
+<p><strong>再去查看监控情况</strong></p>
+<p><img src="/_resources/0f81969009d340c385b57bbe3539dc99.webp" /></p>
+<h3 id="配置-rsync-上行同步">配置 Rsync 上行同步</h3>
+<h4 id="修改rsync源服务器配置-2">修改rsync源服务器配置</h4>
+<div><pre class="hljs"><code>vim <span class="hljs-regexp">/etc/</span>rsyncd.conf
+#添加上行共享模块
+ [backupdir]
+ path = /data
+ comment = upload backup <span class="hljs-keyword">from</span> client
+ <span class="hljs-keyword">read</span> only = no
+ auth users = backuper
+ secrets <span class="hljs-keyword">file</span> = <span class="hljs-regexp">/root/</span>rsnyc_backupers
+ 
+
+ #重启服务
+kill $(cat <span class="hljs-regexp">/var/</span>run/rsyncd.pid)   
+rm -rf <span class="hljs-regexp">/var/</span>run/rsyncd.pid         
+rsync --daemon                     
+netstat -anpt | <span class="hljs-keyword">grep</span> rsync  
+mkdir /data</code></pre></div>
+<p><img src="/_resources/70968e96c4574cde8d7e136eaf66f09e.webp" /></p>
+<p><img src="/_resources/dfa344b9604b408aa3856b3703c0d4d5.webp" /></p>
+<p><img src="/_resources/05a0d6c39c814043975b95ec446e4a3b.webp" /></p>
+<h4 id="在客户机编写触发式同步脚本">在客户机编写触发式同步脚本</h4>
+<p><strong>注意，脚本名不可包含rsync字符串，否则脚本可能不生效</strong></p>
+<div><pre class="hljs"><code>vim /opt/inotify.sh
+<span class="hljs-comment">#!/bin/bash</span>
+<span class="hljs-comment">#定义inotifywait监控目录中文件事件的变量</span>
+INOTIEY_CMD=<span class="hljs-string">"inotifywait -mrq -e modify,create,attrib,move,delete /data/"</span>
+<span class="hljs-comment">#定义执行rsync上行同步的变量</span>
+RSYNC_CMD=<span class="hljs-string">"rsync -azH --delete --password-file=/etc/server.pass /data/ backuper@192.168.239.20::backupdir/"</span>
+<span class="hljs-comment">#使用while、read持续获取监控结果，根据结果可以进一步判断是否读取到输出的监控记录</span>
+<span class="hljs-variable">$INOTIEY_CMD</span> | <span class="hljs-keyword">while</span> <span class="hljs-built_in">read</span> DIRECTORY EVENT FILE
+<span class="hljs-keyword">do</span>
+      <span class="hljs-keyword">if</span> [ $(pgrep rsync | wc -l) -le 0 ] ; <span class="hljs-keyword">then</span>
+      <span class="hljs-comment">#如果rsync未在执行，则立即启动</span>
+      <span class="hljs-variable">$RSYNC_CMD</span>
+      <span class="hljs-keyword">fi</span>
+<span class="hljs-keyword">done</span>
+chmod +x inotify.sh</code></pre></div>
+<p><img src="/_resources/635e15d5f75c441bafa5e379dd0030d8.webp" /></p>
+<p><img src="/_resources/ba246756cf614b3e8a5fea1442232ba1.webp" /></p>
+<h4 id="测试">测试</h4>
+<p><strong>客户机执行脚本并在共享目录内写入数据</strong></p>
+<div><pre class="hljs"><code> <span class="hljs-string">./inotify.sh</span> &amp;   <span class="hljs-comment">#后台执行脚本</span>
+<span class="hljs-keyword">cd</span> <span class="hljs-string">/data</span>
+mkdir 123      
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"123123"</span> &gt;123/index.html</code></pre></div>
+<p><img src="/_resources/a0e19e7345914b70a877bc8a335a2ef8.webp" /></p>
+<p><strong>服务器查看是否同步</strong></p>
+<p><img src="/_resources/34fdf01a6f874c3e8cab230f8c23f5f6.webp" /></p>
+<p><strong>设置开机自启动</strong></p>
+<div><pre class="hljs"><code>chmod +x <span class="hljs-regexp">/etc/</span>rc.d/rc.local  
+echo <span class="hljs-string">"/root/inotify.sh"</span> &gt;&gt; <span class="hljs-regexp">/etc/</span>rc.d/rc.local <span class="hljs-comment">#将脚本加入到开机自启配置文件内</span></code></pre></div>
+<p><img src="/_resources/fd26adb991634424bb00364b9b3df3fa.webp" /></p>
+<p><strong>如果同步的文件比较大同步时比较慢导致后面文件没来的及同步则需要在脚本内添加消息队列或缓冲</strong></p>
+<div><pre class="hljs"><code><span class="hljs-meta">#!/bin/bash</span>
+<span class="hljs-comment">#定义inotifywait监控目录中文件事件的变量</span>
+INOTIEY_CMD=<span class="hljs-string">"inotifywait -mrq -e modify,create,attrib,move,delete /data/"</span>
+<span class="hljs-comment">#定义执行rsync上行同步的变量</span>
+RSYNC_CMD=<span class="hljs-string">"rsync -azH --delete --password-file=/etc/server.pass /data/ backuper@192.168.239.20::backupdir/"</span>
+<span class="hljs-comment">#使用while、read持续获取监控结果，根据结果可以进一步判断是否读取到输出的监控记录</span>
+<span class="hljs-variable">$INOTIEY_CMD</span> | <span class="hljs-keyword">while</span> <span class="hljs-built_in">read</span> DIRECTORY EVENT FILE
+<span class="hljs-keyword">do</span>
+      until [ $(pgrep rsync | wc -l) -le 0 ] 
+      <span class="hljs-comment">#小于等于0，则等待它执行完在去同步其他文件</span>
+      <span class="hljs-keyword">do</span>
+         sleep 1
+      <span class="hljs-keyword">done</span>
+      <span class="hljs-variable">$RSYNC_CMD</span>
+<span class="hljs-keyword">done</span></code></pre></div>
+<h3 id="使用rsync来实现快速删除大量文件">使用rsync来实现快速删除大量文件。</h3>
+<p>假如要在linux下删除大量文件，比如100万、1000万，像/usr/1ocal/nginx/proxy temp的nginx缓存等，那么rm-rf *可能就不好使了，因为要等待很长一段时间。在这种情况下我们可以使用rsync来巧妙处理。rsync实际用的是替换原理。</p>
+<div><pre class="hljs"><code>示例：
+<span class="hljs-comment">#先建立一个空的文件夹：</span>
+mkdir <span class="hljs-string">/123</span>
+<span class="hljs-comment">#模拟大文件目录在目录下创建10000个文件</span>
+<span class="hljs-keyword">cd</span> <span class="hljs-string">/opt</span>
+mkdir text
+<span class="hljs-keyword">cd</span> text
+for <span class="hljs-params">((<span class="hljs-attr">i</span>=1; i&lt;=10000; i++)</span>); do touch file$i; done
+<span class="hljs-comment">#用rsync删除目标目录这样目标目录很快就被清空了</span>
+rsync <span class="hljs-params">--delete-before</span> -a -H -v <span class="hljs-params">--progress</span> <span class="hljs-params">--stats</span> <span class="hljs-string">/123/</span> <span class="hljs-string">/opt/text/</span>
+<span class="hljs-comment">#注意删除文件时空目录要以/结尾否则删除不了</span>
+选项说明：
+<span class="hljs-params">--delete-before</span> 接收者在传输进行删除操作-a归档模式，表示以递归方式传输文件，并保持所有文件属性
+-H保持硬连接的文件
+-v详细输出模式
+<span class="hljs-params">--progress</span>在传输时显示传输过程
+<span class="hljs-params">--stats</span>给出某些文件的传输状态</code></pre></div>
+<p><img src="/_resources/4022f95133404f63be8cf9fe1bbcc1ef.webp" /></p>
+<p><img src="/_resources/92a5bb1278a642f2a70ab9563497ba20.webp" /></p>
+<p><img src="/_resources/e9292fa396a14e77aef2569097f93c3a.webp" /></p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

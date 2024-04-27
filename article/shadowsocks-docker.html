@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>快速部署 Shadowsocks Docker版 - note publish</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">note publish</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">快速部署 Shadowsocks Docker版</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1714192726878"
+                  >2024-04-27 12:38</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1714192726878"
+                  >2024-04-27 12:38</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><h2 id="需求"><a title="需求" href="#%E9%9C%80%E6%B1%82"></a>需求</h2>
+<p>搭梯子翻墙访问google</p>
+<h2 id="准备条件"><a title="准备条件" href="#%E5%87%86%E5%A4%87%E6%9D%A1%E4%BB%B6"></a>准备条件</h2>
+<ol>
+<li>一台墙外VPS（本文使用腾讯云香港 - centos7.6）</li>
+<li>一台能SSH连接到VPS的本地电脑 （推荐连接工具xshell）</li>
+</ol>
+<h2 id="遇到的问题"><a title="遇到的问题" href="#%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"></a>遇到的问题</h2>
+<p>因为在腾讯上直接安装使用shadowsocks遇到了”connect reset by peer”的问题，在公司访问(可直连境外)是正常的，用4g/家里wifi访问就会出现上述错误，怀疑是腾讯云做了相关网站的流量拦截，故想到这用docker再代理一层。</p>
+<h2 id="服务端安装步骤"><a title="服务端安装步骤" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4"></a>服务端安装步骤</h2>
+<p>安装docker</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>wget -qO- get.docker.com | bash</td>
+</tr>
+</tbody>
+</table>
+<p>查看docker的版本信息、加入开启启动、启动docker应用</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3</td>
+<td>docker version  <br class="jop-noMdConv" />systemctl enable docker  <br class="jop-noMdConv" />systemctl start docker</td>
+</tr>
+</tbody>
+</table>
+<p>拉取docker版shadowsocks-libev</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>docker pull appso/shadowsocks-libev</td>
+</tr>
+</tbody>
+</table>
+<p>创建shadowssocks配置文件，主要不要变动配置文件目录，默认配置路径为 <strong>/etc/shadowsocks-libev/config.json</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3</td>
+<td>mkdir -p /etc/shadowsocks-libev/  <br class="jop-noMdConv" />touch /etc/shadowsocks-libev/config.json  <br class="jop-noMdConv" />vi /etc/shadowsocks-libev/config.json</td>
+</tr>
+</tbody>
+</table>
+<p>config.json 配置内容</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3  <br class="jop-noMdConv" />4  <br class="jop-noMdConv" />5  <br class="jop-noMdConv" />6  <br class="jop-noMdConv" />7  <br class="jop-noMdConv" />8  <br class="jop-noMdConv" />9</td>
+<td>{  <br class="jop-noMdConv" />    "server":"0.0.0.0",  <br class="jop-noMdConv" />    "server_port":443,  <br class="jop-noMdConv" />    "password":"your client connection password",  <br class="jop-noMdConv" />    "timeout":300,  <br class="jop-noMdConv" />    "method":"aes-256-gcm",  <br class="jop-noMdConv" />    "fast_open":false,  <br class="jop-noMdConv" />    "mode":"tcp_and_udp"  <br class="jop-noMdConv" />}</td>
+</tr>
+</tbody>
+</table>
+<p>使用docker启动shadowsocks</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>docker run -d -p 443:443 -p 443:443/udp --name ss-libev -v /etc/shadowsocks-libev:/etc/shadowsocks-libev appso/shadowsocks-libev</td>
+</tr>
+</tbody>
+</table>
+<p>查看容器启动状态</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3</td>
+<td>[root@007_centos ~]  <br class="jop-noMdConv" />CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS                  PORTS                                        NAMES               SIZE  <br class="jop-noMdConv" />84c3fd45cbea        appso/shadowsocks-libev   "ss-server -c /etc/s…"   2 days ago          Up 2 days               0.0.0.0:443-&gt;443/tcp, 0.0.0.0:443-&gt;443/udp    ss-libev           0B (virtual 120MB)</td>
+</tr>
+</tbody>
+</table>
+<p>查看端口(443)监听状态</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1  <br class="jop-noMdConv" />2  <br class="jop-noMdConv" />3</td>
+<td>[root@007_centos ~]  <br class="jop-noMdConv" />tcp6       0      0 :::443                  :::*                    LISTEN      13435/docker-proxy    <br class="jop-noMdConv" />udp6       0      0 :::443                  :::*                                13446/docker-proxy</td>
+</tr>
+</tbody>
+</table>
+<p>至此，服务端安装完毕。</p>
+<h2 id="windows客户端安装"><a title="windows客户端安装" href="#windows%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85"></a>windows客户端安装</h2>
+<p>打开 <a title="https://github.com/shadowsocks/shadowsocks-windows/releases" href="https://github.com/shadowsocks/shadowsocks-windows/releases">https://github.com/shadowsocks/shadowsocks-windows/releases</a> 下载最新版本客户端，截止本文编写时间，最新版本为 <a title="https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.9.2" href="https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.9.2">4.1.9.2</a> ，下载后直接打开对应客户端进行配置,应用确定即可。</p>
+<p><img src="/_resources/5881ec932ee4420eb9e660c6593cce13.png" /></p>
+<p>如果使用chrome代理浏览器流量可以下载SwitchyOmega插件，直接安装到chrome的拓展程序里面即可</p>
+<p>下载地址： <a title="https://github.com/FelisCatus/SwitchyOmega/releases" href="https://github.com/FelisCatus/SwitchyOmega/releases">https://github.com/FelisCatus/SwitchyOmega/releases</a></p>
+<p>插件配置如下</p>
+<img width="890" height="369" src="/_resources/23d84f9f129942f69181266756f0f078.png" class="jop-noMdConv" />
+<p>一般情况下，至此即可成功代理浏览器流量</p>
+<h2 id="android客户端安装"><a title="android客户端安装" href="#android%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85"></a>android客户端安装</h2>
+<p>打开 <a title="https://github.com/shadowsocks/shadowsocks-android/releases" href="https://github.com/shadowsocks/shadowsocks-android/releases">https://github.com/shadowsocks/shadowsocks-android/releases</a> 下载最新版本客户端，截止本文编写时间，最新版本为 <a title="https://github.com/shadowsocks/shadowsocks-android/releases/tag/v5.0.5" href="https://github.com/shadowsocks/shadowsocks-android/releases/tag/v5.0.5">v5.0.5</a> ，下载后直接打开对应客户端进行配置,点击那个小飞机即可。</p>
+<p>配置跟windows端配置类似，挺简单的，自行摸索一会儿就可以搞定。</p>
+<p><img src="/_resources/a3b2cb7bf07c40a59f0fc0eb4f8480a6.png" /></p>
+<h2 id="参考资料"><a title="参考资料" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"></a>参考资料</h2>
+<ol>
+<li><a title="https://github.com/shadowsocks/shadowsocks-libev" href="https://github.com/shadowsocks/shadowsocks-libev">https://github.com/shadowsocks/shadowsocks-libev</a></li>
+<li><a title="https://github.com/shadowsocks/shadowsocks-android" href="https://github.com/shadowsocks/shadowsocks-android">https://github.com/shadowsocks/shadowsocks-android</a></li>
+<li><a title="https://github.com/shadowsocks/shadowsocks-windows" href="https://github.com/shadowsocks/shadowsocks-windows">https://github.com/shadowsocks/shadowsocks-windows</a></li>
+<li><a title="https://hub.docker.com/r/appso/shadowsocks-libev/" href="https://hub.docker.com/r/appso/shadowsocks-libev/">https://hub.docker.com/r/appso/shadowsocks-libev/</a></li>
+</ol>
+</div>
+      </article>
+    </div>
+  </body>
+</html>

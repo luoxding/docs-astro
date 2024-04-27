@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>rsync远程同步 - 掘金 - note publish</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">note publish</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">rsync远程同步 - 掘金</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1714143460669"
+                  >2024-04-26 22:57</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1714143460669"
+                  >2024-04-26 22:57</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><h2 id="什么是rsync">什么是rsync</h2>
+<p>一款快速增量备份工具</p>
+<ul>
+<li>Remote Sync，远程同步</li>
+<li>支持本地复制，或者与其他SSH、rsync主机同步</li>
+<li>官方网站：<a title="http://rsync.samba.org/" href="https://link.juejin.cn/?target=http%3A%2F%2Frsync.samba.org%2F">rsync</a></li>
+</ul>
+<h2 id="rsync远程同步">rsync远程同步</h2>
+<p>rsync（Remote sync，远程同步）是一个开源的快速备份工具，可以在不同主机之间镜像同步整个目录树，支持增量备份，并保持链接和权限，且采用优化的同步算法，传输前执行压缩，因此非常适用于异地备份、镜像服务器等应用。</p>
+<p>在远程同步任务中，负责发起rsync同步操作的客户机称为发起端，而负责响应来自客户机的rsync同步操作的服务器称为同步源。在同步过程中，同步源负责提供文件的原始位置，发起端应对该位置具有读取权限。</p>
+<p>例：A服务器同步B服务器的数据，B服务器就是备份源 反过来，B服务器同步A服务器的数据，那么A服务器就是备份源</p>
+<img width="756" height="280" src="/_resources/09a5e9f452274f4b96ef6611924a92a7.webp" class="jop-noMdConv" />
+<h2 id="rsync特性">rsync特性</h2>
+<ul>
+<li>支持拷贝特殊文件，如连接文件、设备等。</li>
+<li>可以有排除指定文件或目录同步的功能，相当于打包命令tar的排除功能。</li>
+<li>可以做到保持原文件或目录的权限、时间、软硬链接、属主、组等所有属性均不改变 –p。</li>
+<li>可以实现增量同步，既只同步发生变化的数据，因此数据传输效率很高（tar-N）。</li>
+<li>可以使用rcp、rsh、ssh等方式来配合传输文件（rsync本身不对数据加密）。</li>
+<li>可以通过socket（进程方式）传输文件和数据（服务端和客户端）*****。</li>
+<li>支持匿名的活认证（无需系统用户）的进程模式传输，可以实现方便安全的进行数据备份和镜像。</li>
+</ul>
+<h2 id="rsync生产场景">rsync生产场景</h2>
+<ul>
+<li>借助cron+rsync把所有客户端服务器数据同步到备份服务器。</li>
+<li>针对公司重要数据备份混乱状况和领导提出备份全网数据的解决方案。</li>
+<li>通过本地打包备份，然后rsync结合inotify应用把全网数统一备份到一个固定存储服务器，然后在存储服务器上通过脚本检查并报警管理员备份结果。</li>
+<li>定期将IDC机房的数据 备份公司的内部服务器，防止机房地震及火灾问题导致数据丢失。</li>
+<li>实时同步，解决存储服务器等的单点问题。</li>
+</ul>
+<h3 id="rsync同步源">rsync同步源</h3>
+<ul>
+<li>
+<p>在远程同步任务中，负责发起 rsync 同步操作的客户机称为客户端，而负责响应来自客户端的 rsync 同步操作的服务器称为备份源，也称之为同步源</p>
+<ul>
+<li>在下行同步（下载）中，同步源负责提供文档的原始位置，发起端应对该位置有读取权限</li>
+<li>在上行同步（上传）中，同步源负责提供文档的目标位置，发起端应对该位置具有写入权限</li>
+</ul>
+</li>
+</ul>
+<img width="756" height="473" src="/_resources/c04d734188084de58671310b1cb90038.webp" class="jop-noMdConv" />
+<h3 id="配置-rsync-下行同步">配置 Rsync 下行同步</h3>
+<h4 id="配置rsync源服务器">配置rsync源服务器</h4>
+<div><pre class="hljs"><code>systemctl stop firewalld.service
+systemctl disable firewalld.service
+setenforce <span class="hljs-number">0</span>
+
+rpm -q rsync                   <span class="hljs-comment">#一般系统已默认安装rsync </span>
+<span class="hljs-comment">#建立/etc/rsyncd.conf配置文件</span>
+vim <span class="hljs-regexp">/etc/</span>rsyncd.conf           <span class="hljs-comment">#添加以下配置项</span>
+
+uid = root
+gid = root
+use chroot = yes                <span class="hljs-comment">#禁锢在源目录</span>
+address = <span class="hljs-number">192.168</span>.<span class="hljs-number">239.20</span>         <span class="hljs-comment">#监听地址</span>
+port <span class="hljs-number">873</span>                       <span class="hljs-comment">#监听端口tcp/udp 873，可通过cat/etc/services I grep rsync查看</span>
+log file = <span class="hljs-regexp">/var/</span>log/rsyncd.log   <span class="hljs-comment">#日志文件位置</span>
+pid file = <span class="hljs-regexp">/var/</span>run/rsyncd.pid   <span class="hljs-comment">#存放进程ID的文件位置</span>
+hosts allow =<span class="hljs-number">192.168</span>.<span class="hljs-number">239.0</span>/<span class="hljs-number">24</span>   <span class="hljs-comment">#允许访问的客户机地址</span>
+dont compress   = *.gz *.tgz *.zip *.z *.Z *.rpm *.deb *.bz2<span class="hljs-comment">#同步时不再压缩的文件类型</span>
+
+[wwwroot]                                   <span class="hljs-comment">#共享模块名称</span>
+path = <span class="hljs-regexp">/var/</span>www/html                        <span class="hljs-comment">#源目录的实际路径</span>
+comment = folder of web
+read only = yes                             <span class="hljs-comment">#是否为只读</span>
+auth users = backuper                       <span class="hljs-comment">#授权账户，多个账号以空格分隔</span>
+secrets file=<span class="hljs-regexp">/root/</span>rsnyc_backupers         <span class="hljs-comment">#存放账户信息的数据文件</span>
+<span class="hljs-comment">#如采用匿名的方式，只要将其中的“auth users"和“secrets file”配置项去掉即可</span>
+
+<span class="hljs-comment">#为备份账户创建数据文件</span>
+vim <span class="hljs-regexp">/root/</span>rsnyc_backupers
+backuper:<span class="hljs-number">1999612</span>                           <span class="hljs-comment">#无须建立同名系统用户</span>
+chmod <span class="hljs-number">600</span> <span class="hljs-regexp">/root/</span>rsnyc_backupers
+<span class="hljs-comment">#保证所有用户对源目录/var/www/html都有读取权限</span>
+chmod +r <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/html/</span>
+ls -d <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/html/</span>
+
+<span class="hljs-comment">#启动rsync服务程序</span>
+rsync --daemon                  <span class="hljs-comment">#启动rsync服务，以独立监听服务的方式（守护进程）运行</span>
+
+<span class="hljs-comment">#关闭服务</span>
+kill $(cat <span class="hljs-regexp">/var/</span>run/rsyncd.pid)
+rm -rf <span class="hljs-regexp">/var/</span>run/rsyncd.pid</code></pre></div>
+<p><strong>关闭防火墙</strong></p>
+<img width="756" height="93" src="/_resources/0da87a3cbaab4c50a36854e94d55e5e7.webp" class="jop-noMdConv" />
+<p><strong>编辑rsync配置文件</strong></p>
+<img width="756" height="555" src="/_resources/57f93eb5210749878b51f9a15e53ce33.webp" class="jop-noMdConv" />
+<p><strong>编辑用户账号文件，固定格式为[名称:密码]，一行一个，并赋予文件权限及创建共享目录赋予读权限开启服务</strong></p>
+<img width="756" height="43" src="/_resources/2e872e1c1a264513b0867e627156d66a.webp" class="jop-noMdConv" />
+<img width="756" height="73" src="/_resources/d899026f81754d819b2423da20b7053c.webp" class="jop-noMdConv" />
+<p><img src="/_resources/73da6405d65e46849a7e6bb075ecb1ce.webp" /></p>
+<h4 id="发起端">发起端</h4>
+<div><pre class="hljs"><code>基本格式
+rsynd <span class="hljs-selector-attr">[选项]</span> 原始位置 目标位置</code></pre></div>
+<p>常用选项：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-r</td>
+<td>递归模式，包含目录及子目录中的所有文件。</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>对于符号链接文件仍然复制为符号链接文件。</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示同步过程的详细（verbose）信息。</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>在传输文件时进行压缩（compress）。</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>归档模式，保留文件的权限、属性等信息，等同于组合选项“-rlptgop"。</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>保留文件的权限标记。</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>保留文件的时间标记。</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>保留文件的属组标记（仅超级用户使用）。</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>保留文件的属主标记（仅超级用户使用）。</td>
+</tr>
+<tr>
+<td>-H</td>
+<td>保留硬连接文件。</td>
+</tr>
+<tr>
+<td>-A</td>
+<td>保留ACL属性信息。</td>
+</tr>
+<tr>
+<td>-D</td>
+<td>保留设备文件及其他特殊文件。</td>
+</tr>
+<tr>
+<td>--delete</td>
+<td>删除目标位置有而原始位置没有的文件。</td>
+</tr>
+<tr>
+<td>--checksum</td>
+<td>根据校验和（而不是文件大小、修改时间）来决定是否跳过文件。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>服务器在共享目录存放文件</strong></p>
+<p><img src="/_resources/d995842ec1494db887f3d834bd071223.webp" /></p>
+<p><strong>将指定的资源下载到本地/data目录下进行备份。</strong><br />
+<strong>格式一：</strong></p>
+<div><pre class="hljs"><code>rsync  -avz backuper @<span class="hljs-number">192.168.239.20</span><span class="hljs-number">::</span>wwwroot /data</code></pre></div>
+<p><img src="/_resources/da49c54343614eeea0914854db30f78e.webp" /></p>
+<p><strong>格式二：</strong></p>
+<div><pre class="hljs"><code>rsync -avz rsync:<span class="hljs-regexp">//</span>backuper @<span class="hljs-number">192.168</span>.<span class="hljs-number">239.20</span><span class="hljs-regexp">/wwwroot  /</span>data/</code></pre></div>
+<p><img src="/_resources/d15b1bee9631471087a042adb4add17d.webp" /></p>
+<h4 id="免交互">免交互</h4>
+<div><pre class="hljs"><code>格式配置：
+echo <span class="hljs-string">"123123"</span> &gt;<span class="hljs-regexp">/etc/</span>server.pass 
+
+chmod <span class="hljs-number">600</span> <span class="hljs-regexp">/etc/</span>server.pass 
+rsync -az --<span class="hljs-keyword">delete</span> --password-<span class="hljs-keyword">file</span>=<span class="hljs-regexp">/etc/</span>server.pass backuper@<span class="hljs-number">192.168</span>.<span class="hljs-number">239.20</span>::wwwroot <span class="hljs-regexp">/data/</span>
+#为了在同步过程中不用输入密码，需要创建一个密码文件，保存backuper用户的密码，如<span class="hljs-regexp">/etc/</span>server.pass。在执行rsync 同步时使用选项“--password-<span class="hljs-keyword">file</span>=<span class="hljs-regexp">/etc/</span>server.pass<span class="hljs-string">"指定即可。</span></code></pre></div>
+<p><img src="/_resources/e2ec0fea70ac4eb6af4c5c713e98f18b.webp" /></p>
+<p><strong>也可以通过计划性任务对数据进行定期同步</strong></p>
+<div><pre class="hljs"><code>crontab -e                               <span class="hljs-comment">#添加计划性任务</span>
+<span class="hljs-number">30</span> <span class="hljs-number">22</span> * * * <span class="hljs-regexp">/usr/</span>bin<span class="hljs-regexp">/rsync -az --delete --password-file=/</span>etc<span class="hljs-regexp">/server.pass backuper@192.168.239.20::wwwroot /</span>data/  <span class="hljs-comment">#每天的10：30对数据进行同步</span>
+systemctl restart crond                  <span class="hljs-comment">#重启计划任务服务  </span>
+systemctl enable crond                   <span class="hljs-comment">#设置开机自启</span></code></pre></div>
+<h4 id="rsync实时同步">rsync实时同步</h4>
+<h4 id="定期同步的不足">定期同步的不足</h4>
+<ul>
+<li>执行备份的时间固定，延迟明显、实时性差</li>
+<li>当同步源长期不变化时，密集的定期任务是不必要的</li>
+</ul>
+<h4 id="实时同步的优点">实时同步的优点</h4>
+<ul>
+<li>一旦同步源出现变化，立即启动备份</li>
+<li>只要同步源无变化，则不执行备份</li>
+</ul>
+<h2 id="linux内核的inotify机制">Linux内核的inotify机制</h2>
+<ul>
+<li>从版本2.6.13开始提供</li>
+<li>可以监控文件系统的变动情况，并做出通知响应</li>
+<li>辅助软件：inotify-tools</li>
+</ul>
+<p><img src="/_resources/bd15bf9b6f1242a596d8497573a834bd.webp" /></p>
+<h3 id="配置rsyncinotify-实时同步">配置Rsync+Inotify 实时同步</h3>
+<ul>
+<li>使用inotify通知接口，可以用来监控文件系统的各种变化情况，如文件存取、删除、移动、修改等。利用这一机制，可以非常方便地实现文件异动告警、增量备份，并针对目录或文件的变化及时作出响应。</li>
+<li>将inotify机制与rsync工具相结合，可以实现触发式备份（实时同步），即只要原始位置的文档发生变化，则立即启动增量备份操作；否则处于静默等待状态。</li>
+<li>因为 inotify 通知机制由 Linux 内核提供，因此主要做本机监控，在触发式备份中应用时更适合上行同步</li>
+</ul>
+<h4 id="修改rsync源服务器配置">修改rsync源服务器配置</h4>
+<div><pre class="hljs"><code>vim <span class="hljs-regexp">/etc/</span>rsyncd.conf
+read only = no                     <span class="hljs-comment">#关闭只读 上行同步需要可以写</span>
+kill $(cat <span class="hljs-regexp">/var/</span>run/rsyncd.pid)   <span class="hljs-comment">#杀死进程等于关闭服务</span>
+rm -rf <span class="hljs-regexp">/var/</span>run/rsyncd.pid         <span class="hljs-comment">#要将服务的pid文件删除否则重启服务可能会起不来会报错</span>
+rsync --daemon                     <span class="hljs-comment">#重启服务</span>
+netstat -anpt | grep rsync         <span class="hljs-comment">#查看服务是否启动</span>
+chmod <span class="hljs-number">777</span> <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/html/</span>           <span class="hljs-comment">#给共享目录可读可写可执行权限</span></code></pre></div>
+<p><img src="/_resources/173f2e7f8d2246ee80cf269619ba479a.webp" /></p>
+<p><img src="/_resources/88845def54c5496baf92f1775fe600e6.webp" /></p>
+<h4 id="调整客户机inotify-内核参数">调整客户机inotify 内核参数</h4>
+<ul>
+<li>在Linux内核中，默认的inotify机制提供了三个调控参数：max_queue_events（监控事件队列，默认值为16384）、max_user_instances（最多监控实例数，默认值为128）、max_user_watches（每个实例最多监控文件数，默认值为8192）。当要监控的目录、文件数量较多或者变化较频繁时，建议加大这三个参数的值。</li>
+</ul>
+<div><pre class="hljs"><code><span class="hljs-comment">#查看参数值</span>
+cat <span class="hljs-regexp">/proc/</span>sys<span class="hljs-regexp">/fs/i</span>notify/max_queued_events
+cat <span class="hljs-regexp">/proc/</span>sys<span class="hljs-regexp">/fs/i</span>notify/max_user_instances 
+cat <span class="hljs-regexp">/proc/</span>sys<span class="hljs-regexp">/fs/i</span>notify/max_user_watches
+
+vim <span class="hljs-regexp">/etc/</span>sysctl.conf 
+fs.inotify.max_queued_events = <span class="hljs-number">16384</span>
+fs.inotify.max_user_instances = <span class="hljs-number">1024</span>
+fs.inotify.max_user_watches = <span class="hljs-number">1048576</span>
+
+sysctl -p  <span class="hljs-comment">#加载参数</span></code></pre></div>
+<p><img src="/_resources/de0e2944599842499d222e3e63afe388.webp" /></p>
+<p><img src="/_resources/1f8dfb0e21bb4b09b8089a19b534fa9e.webp" /></p>
+<p><img src="/_resources/05f33ee967c2449ead5d0d7f027bacdc.webp" /></p>
+<h4 id="在客户机安装inotify-tools">在客户机安装inotify-tools</h4>
+<ul>
+<li>用inotify机制还需要安装 inotify-tools，以便提供inotifywait、inotifywatch 辅助工具程序，用来监控、汇总改动情况。</li>
+<li>inotifywait：可监控modify（修改）、create（创建）、move（移动）、delete（删除）、attrib（属性更改）等各种事件，一有变动立即输出结果。</li>
+<li>inotifywatch：可用来收集文件系统变动情况，并在运行结束后输出汇总的变化情况。</li>
+</ul>
+<div><pre class="hljs"><code>tar zxvf inotify-tools<span class="hljs-number">-3.14</span>.tar.gz    <span class="hljs-meta">#将软件包拉入/opt目录解压</span>
+cd /opt/inotify-tools<span class="hljs-number">-3.14</span>            <span class="hljs-meta">#进入目录</span>
+./configure &amp;&amp; <span class="hljs-built_in">make</span> &amp;&amp; <span class="hljs-built_in">make</span> install   <span class="hljs-meta">#配置、编译安装</span>
+<span class="hljs-meta">#可以先执行*inotifywait”命令，然后另外再开启一个新终端向/data目录下添加文件、移动文件，在原来的终端中跟踪屏幕输出结果。</span>
+inotifywait -mrq -e modify,<span class="hljs-keyword">create</span>,move,<span class="hljs-keyword">delete</span> /data
+<span class="hljs-meta">#选项“-e"：用来指定要监控哪些事件</span>
+<span class="hljs-meta">#选项“-m”：表示持续监控</span>
+<span class="hljs-meta">#选项“-r"：表示递归整个目录</span>
+<span class="hljs-meta">#选项“-q”：简化输出信息</span></code></pre></div>
+<p><img src="/_resources/960582c863a54b34ac652470e29ace04.webp" /></p>
+<p><img src="/_resources/be457cc3acc54d389a801389bba374c2.webp" /></p>
+<p><img src="/_resources/00844888e3f44b5997f06a7427e12f1d.webp" /></p>
+<p><strong>此时在开个终端对数据/data目录文件进行修改</strong></p>
+<p><img src="/_resources/295e8d184f0f45d09eb12225b1507cb8.webp" /></p>
+<p><strong>再去查看监控情况</strong></p>
+<p><img src="/_resources/0f81969009d340c385b57bbe3539dc99.webp" /></p>
+<h3 id="配置-rsync-上行同步">配置 Rsync 上行同步</h3>
+<h4 id="修改rsync源服务器配置-2">修改rsync源服务器配置</h4>
+<div><pre class="hljs"><code>vim <span class="hljs-regexp">/etc/</span>rsyncd.conf
+#添加上行共享模块
+ [backupdir]
+ path = /data
+ comment = upload backup <span class="hljs-keyword">from</span> client
+ <span class="hljs-keyword">read</span> only = no
+ auth users = backuper
+ secrets <span class="hljs-keyword">file</span> = <span class="hljs-regexp">/root/</span>rsnyc_backupers
+ 
+
+ #重启服务
+kill $(cat <span class="hljs-regexp">/var/</span>run/rsyncd.pid)   
+rm -rf <span class="hljs-regexp">/var/</span>run/rsyncd.pid         
+rsync --daemon                     
+netstat -anpt | <span class="hljs-keyword">grep</span> rsync  
+mkdir /data</code></pre></div>
+<p><img src="/_resources/70968e96c4574cde8d7e136eaf66f09e.webp" /></p>
+<p><img src="/_resources/dfa344b9604b408aa3856b3703c0d4d5.webp" /></p>
+<p><img src="/_resources/05a0d6c39c814043975b95ec446e4a3b.webp" /></p>
+<h4 id="在客户机编写触发式同步脚本">在客户机编写触发式同步脚本</h4>
+<p><strong>注意，脚本名不可包含rsync字符串，否则脚本可能不生效</strong></p>
+<div><pre class="hljs"><code>vim /opt/inotify.sh
+<span class="hljs-comment">#!/bin/bash</span>
+<span class="hljs-comment">#定义inotifywait监控目录中文件事件的变量</span>
+INOTIEY_CMD=<span class="hljs-string">"inotifywait -mrq -e modify,create,attrib,move,delete /data/"</span>
+<span class="hljs-comment">#定义执行rsync上行同步的变量</span>
+RSYNC_CMD=<span class="hljs-string">"rsync -azH --delete --password-file=/etc/server.pass /data/ backuper@192.168.239.20::backupdir/"</span>
+<span class="hljs-comment">#使用while、read持续获取监控结果，根据结果可以进一步判断是否读取到输出的监控记录</span>
+<span class="hljs-variable">$INOTIEY_CMD</span> | <span class="hljs-keyword">while</span> <span class="hljs-built_in">read</span> DIRECTORY EVENT FILE
+<span class="hljs-keyword">do</span>
+      <span class="hljs-keyword">if</span> [ $(pgrep rsync | wc -l) -le 0 ] ; <span class="hljs-keyword">then</span>
+      <span class="hljs-comment">#如果rsync未在执行，则立即启动</span>
+      <span class="hljs-variable">$RSYNC_CMD</span>
+      <span class="hljs-keyword">fi</span>
+<span class="hljs-keyword">done</span>
+chmod +x inotify.sh</code></pre></div>
+<p><img src="/_resources/635e15d5f75c441bafa5e379dd0030d8.webp" /></p>
+<p><img src="/_resources/ba246756cf614b3e8a5fea1442232ba1.webp" /></p>
+<h4 id="测试">测试</h4>
+<p><strong>客户机执行脚本并在共享目录内写入数据</strong></p>
+<div><pre class="hljs"><code> <span class="hljs-string">./inotify.sh</span> &amp;   <span class="hljs-comment">#后台执行脚本</span>
+<span class="hljs-keyword">cd</span> <span class="hljs-string">/data</span>
+mkdir 123      
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"123123"</span> &gt;123/index.html</code></pre></div>
+<p><img src="/_resources/a0e19e7345914b70a877bc8a335a2ef8.webp" /></p>
+<p><strong>服务器查看是否同步</strong></p>
+<p><img src="/_resources/34fdf01a6f874c3e8cab230f8c23f5f6.webp" /></p>
+<p><strong>设置开机自启动</strong></p>
+<div><pre class="hljs"><code>chmod +x <span class="hljs-regexp">/etc/</span>rc.d/rc.local  
+echo <span class="hljs-string">"/root/inotify.sh"</span> &gt;&gt; <span class="hljs-regexp">/etc/</span>rc.d/rc.local <span class="hljs-comment">#将脚本加入到开机自启配置文件内</span></code></pre></div>
+<p><img src="/_resources/fd26adb991634424bb00364b9b3df3fa.webp" /></p>
+<p><strong>如果同步的文件比较大同步时比较慢导致后面文件没来的及同步则需要在脚本内添加消息队列或缓冲</strong></p>
+<div><pre class="hljs"><code><span class="hljs-meta">#!/bin/bash</span>
+<span class="hljs-comment">#定义inotifywait监控目录中文件事件的变量</span>
+INOTIEY_CMD=<span class="hljs-string">"inotifywait -mrq -e modify,create,attrib,move,delete /data/"</span>
+<span class="hljs-comment">#定义执行rsync上行同步的变量</span>
+RSYNC_CMD=<span class="hljs-string">"rsync -azH --delete --password-file=/etc/server.pass /data/ backuper@192.168.239.20::backupdir/"</span>
+<span class="hljs-comment">#使用while、read持续获取监控结果，根据结果可以进一步判断是否读取到输出的监控记录</span>
+<span class="hljs-variable">$INOTIEY_CMD</span> | <span class="hljs-keyword">while</span> <span class="hljs-built_in">read</span> DIRECTORY EVENT FILE
+<span class="hljs-keyword">do</span>
+      until [ $(pgrep rsync | wc -l) -le 0 ] 
+      <span class="hljs-comment">#小于等于0，则等待它执行完在去同步其他文件</span>
+      <span class="hljs-keyword">do</span>
+         sleep 1
+      <span class="hljs-keyword">done</span>
+      <span class="hljs-variable">$RSYNC_CMD</span>
+<span class="hljs-keyword">done</span></code></pre></div>
+<h3 id="使用rsync来实现快速删除大量文件">使用rsync来实现快速删除大量文件。</h3>
+<p>假如要在linux下删除大量文件，比如100万、1000万，像/usr/1ocal/nginx/proxy temp的nginx缓存等，那么rm-rf *可能就不好使了，因为要等待很长一段时间。在这种情况下我们可以使用rsync来巧妙处理。rsync实际用的是替换原理。</p>
+<div><pre class="hljs"><code>示例：
+<span class="hljs-comment">#先建立一个空的文件夹：</span>
+mkdir <span class="hljs-string">/123</span>
+<span class="hljs-comment">#模拟大文件目录在目录下创建10000个文件</span>
+<span class="hljs-keyword">cd</span> <span class="hljs-string">/opt</span>
+mkdir text
+<span class="hljs-keyword">cd</span> text
+for <span class="hljs-params">((<span class="hljs-attr">i</span>=1; i&lt;=10000; i++)</span>); do touch file$i; done
+<span class="hljs-comment">#用rsync删除目标目录这样目标目录很快就被清空了</span>
+rsync <span class="hljs-params">--delete-before</span> -a -H -v <span class="hljs-params">--progress</span> <span class="hljs-params">--stats</span> <span class="hljs-string">/123/</span> <span class="hljs-string">/opt/text/</span>
+<span class="hljs-comment">#注意删除文件时空目录要以/结尾否则删除不了</span>
+选项说明：
+<span class="hljs-params">--delete-before</span> 接收者在传输进行删除操作-a归档模式，表示以递归方式传输文件，并保持所有文件属性
+-H保持硬连接的文件
+-v详细输出模式
+<span class="hljs-params">--progress</span>在传输时显示传输过程
+<span class="hljs-params">--stats</span>给出某些文件的传输状态</code></pre></div>
+<p><img src="/_resources/4022f95133404f63be8cf9fe1bbcc1ef.webp" /></p>
+<p><img src="/_resources/92a5bb1278a642f2a70ab9563497ba20.webp" /></p>
+<p><img src="/_resources/e9292fa396a14e77aef2569097f93c3a.webp" /></p>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
