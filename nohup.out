@@ -1,0 +1,146 @@
+tracing_subscriber - init success
+[507518:507518:0321/024339.194255:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[507476:507476:0321/024340.136788:ERROR:sharing_service.cc(303)] Device registration failed with fatal error
+[507518:507518:0321/024351.543832:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+[507518:507518:0321/024354.277266:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+[507519:507529:0321/024920.557644:ERROR:ssl_client_socket_impl.cc(877)] handshake failed; returned -1, SSL error code 1, net_error -100
+
+(brave:507476): Gdk-WARNING **: 02:49:47.885: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:49:48.806: gdk_window_set_user_time called on non-toplevel
+
+[507476:507476:0321/024948.814286:ERROR:atom_cache.cc(230)] Add chromium/x-internal-source-rfh-token to kAtomsToCache
+
+(brave:507476): Gdk-WARNING **: 02:50:37.671: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:50:38.017: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:50:38.637: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:23.426: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:23.576: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:23.827: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:23.989: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:24.474: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:25.086: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:25.743: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:26.223: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:26.369: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 02:57:33.635: gdk_window_set_user_time called on non-toplevel
+
+[507476:507476:0321/030123.460591:ERROR:atom_cache.cc(230)] Add WM_CHANGE_STATE to kAtomsToCache
+[507518:507518:0321/032206.680309:ERROR:shared_image_manager.cc(401)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+
+(brave:507476): Gdk-WARNING **: 03:23:19.280: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 03:23:19.661: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 03:24:25.176: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 03:24:25.491: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 03:24:27.808: gdk_window_set_user_time called on non-toplevel
+
+[507518:507518:0321/032444.749333:ERROR:shared_image_manager.cc(401)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+
+(brave:507476): Gdk-WARNING **: 03:35:26.800: gdk_window_set_user_time called on non-toplevel
+
+
+(brave:507476): Gdk-WARNING **: 03:35:27.153: gdk_window_set_user_time called on non-toplevel
+
+[507476:507476:0321/040146.739812:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.751549:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.754692:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.803281:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.833599:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.966848:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.972691:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.977785:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.981350:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.987745:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040146.992655:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.003964:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.018419:ERROR:network_service_instance_impl.cc(612)] Network service crashed, restarting service.
+[507476:507476:0321/040147.083977:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.093630:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.112571:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.120040:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.128921:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.138853:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.151406:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.207695:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.214467:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.216559:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.224028:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.227436:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.233763:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.239217:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.246868:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.253662:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.263658:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.271096:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.280127:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.294360:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.314406:ERROR:zygote_communication_linux.cc(296)] Failed to send GetTerminationStatus message to zygote
+[507476:507476:0321/040147.412023:ERROR:gpu_process_host.cc(947)] GPU process launch failed: error_code=1002
+[507476:507476:0321/040147.778129:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail cfhdojbkjhnklbpkdaibdccddilifddb: 3
+[507476:507476:0321/040147.780532:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail ofpnmcalabcbjgholdjcjblkibolbppb: 3
+[507476:507476:0321/040147.785593:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail chphlpgkkbolifaimnlloiipkdnihall: 3
+[507476:507476:0321/040147.787293:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail cimiefiiaegbelhefglklhhakcgmhkai: 3
+[507476:507476:0321/040147.788858:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail dhdgffkkebhmkfjojejmpbldmpobfkfo: 3
+[507476:507476:0321/040147.790955:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail gbkeegbaiigmenfmjfclcdgdpimamgkj: 3
+[507476:507476:0321/040147.792883:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail jgjaeacdkonaoafenlfkkkmbaopkbilf: 3
+[507476:507476:0321/040147.806369:ERROR:gpu_process_host.cc(947)] GPU process launch failed: error_code=1002
+[507476:507476:0321/040147.918224:ERROR:gpu_process_host.cc(947)] GPU process launch failed: error_code=1002
+[507476:507476:0321/040147.923628:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail bebmphofpgkhclocdbgomhnjcpelbenh: 3
+[507476:507476:0321/040147.924853:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail cfhdojbkjhnklbpkdaibdccddilifddb: 3
+[507476:507476:0321/040147.926171:ERROR:service_worker_task_queue.cc(197)] DidStartWorkerFail chphlpgkkbolifaimnlloiipkdnihall: 3
+[507476:507476:0321/040147.928278:ERROR:gpu_process_host.cc(947)] GPU process launch failed: error_code=1002
+[507476:507476:0321/040147.932514:ERROR:gpu_process_host.cc(947)] GPU process launch failed: error_code=1002
+[507476:507476:0321/040147.936461:ERROR:gpu_process_host.cc(947)] GPU process launch failed: error_code=1002
+[507476:507476:0321/040147.938980:ERROR:gpu_process_host.cc(947)] GPU process launch failed: error_code=1002
+[507476:507476:0321/040147.940677:ERROR:gpu_process_host.cc(947)] GPU process launch failed: error_code=1002
+[507476:507476:0321/040147.943022:ERROR:gpu_process_host.cc(947)] GPU process launch failed: error_code=1002
+[507476:507476:0321/040147.943074:FATAL:gpu_data_manager_impl_private.cc(420)] GPU process isn't usable. Goodbye.
+[0321/040147.978086:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0321/040147.978407:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0321/040147.981136:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0321/040147.985940:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0321/040147.997166:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0321/040147.997981:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0321/040148.001571:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0321/040148.002356:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0321/040148.002727:ERROR:elf_dynamic_array_reader.h(64)] tag not found
+[0321/040148.003288:ERROR:process_memory_range.cc(75)] read out of range
+[0321/040148.004298:ERROR:process_memory_range.cc(75)] read out of range
+[0321/040148.023535:ERROR:process_memory_range.cc(75)] read out of range
+[0321/040148.023580:ERROR:process_memory_range.cc(75)] read out of range
+[0321/040148.024222:ERROR:process_memory_range.cc(75)] read out of range
+[0321/040148.024232:ERROR:process_memory_range.cc(75)] read out of range
+[0321/040148.030898:ERROR:directory_reader_posix.cc(43)] opendir /home/ding/.config/BraveSoftware/Brave-Browser/Crash Reports/attachments/b1b093d5-ff85-4655-b435-270a47187529: No such file or directory (2)

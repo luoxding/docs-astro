@@ -1,0 +1,12 @@
+---
+title: 代码高亮测试2
+description: A reference page in my new Starlight docs site.
+---
+
+import { Code } from '@astrojs/starlight/components';
+
+export const exampleCode = `console.log('这可能来自文件或 CMS！');`;
+export const fileName = 'example.js';
+export const highlights = ['文件', 'CMS'];
+
+<Code code={exampleCode} lang="js" title={fileName} mark={highlights} />

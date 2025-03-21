@@ -1,0 +1,11 @@
+@layer base {
+    :root,
+    html[data-theme="light"] {
+      --theme-code-tabs: #22272f;
+      --theme-code-bg: #282c34;
+    }
+    html[data-theme="dark"] {
+      --theme-code-tabs: #22272f;
+      --theme-code-bg: #282c34;
+    }
+  }

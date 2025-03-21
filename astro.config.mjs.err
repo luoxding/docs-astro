@@ -1,0 +1,49 @@
+// @ts-check
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
+import { astroDocsExpressiveCode } from "./src/utils/expressive-code";
+// import react from '@astrojs/react'; // 确保导入 React 集成
+// import sitemap from '@astrojs/sitemap'; // 确保导入 Sitemap 集成
+
+export default defineConfig({
+  integrations: [
+    starlight({
+      title: '个人知识库',
+      social: {
+        github: 'https://github.com/withastro/starlight',
+        // facebook: 'anthony_lambert', // 如果不需要，可以删除这行
+      },
+      sidebar: [
+        {
+          label: 'Guides',
+          items: [
+            { label: 'Example Guide', slug: 'guides/example' },
+          ],
+        },
+        {
+          label: '电脑笔记',
+          autogenerate: { directory: 'notes' },
+        },
+        {
+          label: '大量文章测试',
+          autogenerate: { directory: 'article' },
+        },
+        {
+          label: 'Reference',
+          autogenerate: { directory: 'reference' },
+        },
+      ],
+    }),
+    astroDocsExpressiveCode(),
+    // react(),    // 现在 react 已被正确导入
+    // sitemap(),  // 现在 sitemap 已被正确导入
+    // ... 其他集成
+  ],
+  markdown: {
+    shikiConfig: {
+      theme: "one-dark-pro",
+      wrap: true,
+    },
+    extendDefaultPlugins: true,
+  },
+});
