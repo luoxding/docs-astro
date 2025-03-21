@@ -9,7 +9,7 @@ export default defineConfig({
 	// base: '/astro-starlight/', // GitHub Pages 子路径（仓库名）
 	//site: 'https://page.luoxingding.com/astro/',
 	site: 'https://luoxingding.com/docs',
-	base: '/docs/', // 添加路径前缀 index也要改：      link: /astro/guides/example/才能正确跳转
+	//base: '/docs/', // 添加路径前缀 index也要改：      link: /astro/guides/example/才能正确跳转
 	integrations: [
 		starlight({
 			title: '个人知识库',
