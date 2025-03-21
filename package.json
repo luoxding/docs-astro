@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean": "rm -rf dist",
+    "postinstall": "pnpm rebuild sharp"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.31.1",
