@@ -1,86 +1,77 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-// import { astroDocsExpressiveCode } from "./src/utils/expressive-code";
+import mdx from '@astrojs/mdx';
+import expressiveCode from "astro-expressive-code";
+import remarkMermaid from 'remark-mermaidjs';
 
 // https://astro.build/config
 export default defineConfig({
-	// site: 'https://luoxding.github.io/astro-starlight/', // 你的 GitHub Pages 地址
-	// base: '/astro-starlight/', // GitHub Pages 子路径（仓库名）
-	//site: 'https://page.luoxingding.com/astro/',
-	site: 'https://luoxingding.com/docs',
-	//base: '/docs/', // 添加路径前缀 index也要改：      link: /astro/guides/example/才能正确跳转
-	integrations: [
-		starlight({
-			title: '个人知识库',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-				// facebook: 'anthony_lambert'，
-			},
-			sidebar: [
-				{
-					label: '笔记指南',
-					collapsed: false,
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: '笔记索引', slug: 'guide' },
-						{
-							label: "自托管站点",
-							link: "/site/",
-						  },
-					],
-				},
-				{
-					label: '系统配置',
-					collapsed: true,
-					autogenerate: { directory: 'system' },
-				},
-				{
-					label: '桌面环境',
-					collapsed: true,
-					autogenerate: { directory: 'desktop' },
-				},
-				{
-					label: '工具应用',
-					collapsed: true,
-					autogenerate: { directory: 'tools' },
-				},
-				{
-					label: '网站和前端框架',
-					collapsed: true,
-					autogenerate: { directory: 'web' },
-				},
-				{
-					label: '服务管理',
-					collapsed: true,
-					autogenerate: { directory: 'services' },
-				},
-				{
-					label: '个人项目和配置',
-					collapsed: true,
-					autogenerate: { directory: 'personal' },
-				},
-				{
-					label: '其它资料',
-					collapsed: true,
-					autogenerate: { directory: 'other' },
-				},
-			],
-			favicon: 'src/assets/bird.png',
-			expressiveCode: {
-				// You can use any of the themes bundled with Shiki by name,
-				// specify a path to JSON theme file, or pass an instance
-				// of the `ExpressiveCodeTheme` class here:
-				themes: ['dracula', 'solarized-light'],
-				shiki: {
-				  // You can pass additional plugin options here,
-				  // e.g. to load custom language grammars:
-				  langs: [
-					// import('./some-exported-grammar.mjs'),
-					// JSON.parse(fs.readFileSync('./some-json-grammar.json', 'utf-8'))
-				  ],
-				},
-			},
-		}),
-	],
+  site: 'https://luoxingding.com/docs',
+  markdown: {
+    // Applied to .md and .mdx files
+    remarkPlugins: [remarkMermaid],
+  },
+  integrations: [
+    expressiveCode(),
+    mdx(),
+    starlight({
+      title: '个人知识库',
+      social: {
+        github: 'https://github.com/withastro/starlight',
+      },
+      sidebar: [
+        {
+          label: '笔记指南',
+          collapsed: false,
+          items: [
+            { label: '笔记索引', slug: 'guide' },
+            { label: '自托管站点', link: '/site/' },
+          ],
+        },
+        {
+          label: '系统配置',
+          collapsed: true,
+          autogenerate: { directory: 'system' },
+        },
+        {
+          label: '桌面环境',
+          collapsed: true,
+          autogenerate: { directory: 'desktop' },
+        },
+        {
+          label: '工具应用',
+          collapsed: true,
+          autogenerate: { directory: 'tools' },
+        },
+        {
+          label: '网站和前端框架',
+          collapsed: true,
+          autogenerate: { directory: 'web' },
+        },
+        {
+          label: '服务管理',
+          collapsed: true,
+          autogenerate: { directory: 'services' },
+        },
+        {
+          label: '个人项目和配置',
+          collapsed: true,
+          autogenerate: { directory: 'personal' },
+        },
+        {
+          label: '其它资料',
+          collapsed: true,
+          autogenerate: { directory: 'other' },
+        },
+      ],
+      favicon: 'src/assets/bird.png',
+      expressiveCode: {
+        themes: ['dracula', 'solarized-light'],
+        shiki: {
+          langs: [],
+        },
+      },
+    }),
+  ],
 });
