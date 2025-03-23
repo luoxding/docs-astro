@@ -4,13 +4,17 @@ import starlight from '@astrojs/starlight';
 import mdx from '@astrojs/mdx';
 import expressiveCode from "astro-expressive-code";
 import remarkMermaid from 'remark-mermaidjs';
+import remarkMarkmap from 'remark-markmap';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://luoxingding.com/docs',
   markdown: {
     // Applied to .md and .mdx files
-    remarkPlugins: [remarkMermaid],
+    remarkPlugins: [
+		remarkMermaid,
+		remarkMarkmap,
+	],
   },
   integrations: [
     expressiveCode(),

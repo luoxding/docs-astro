@@ -23,6 +23,7 @@
     "shiki": "^2.3.2"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "remark-markmap": "^1.0.8"
   }
 }
