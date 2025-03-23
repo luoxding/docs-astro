@@ -34,6 +34,16 @@ server {
 
 ```
 
+## 图表
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 ## 其它样式参考
 https://github.com/shorebirdtech/handbook/blob/4f7c27d8b1531dff48605b39d3f4ad9b3ee83421/astro.config.mjs#L4
 https://handbook.shorebird.dev/  进入即首页，没有欢迎页，符合我的需求。
