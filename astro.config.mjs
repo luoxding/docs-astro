@@ -8,7 +8,7 @@ import remarkMarkmap from 'remark-markmap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://luoxingding.com/docs',
+  site: 'https://wiki.luoxingding.com/',
   markdown: {
     // Applied to .md and .mdx files
     remarkPlugins: [
@@ -27,7 +27,7 @@ export default defineConfig({
       sidebar: [
         {
           label: '笔记指南',
-          collapsed: false,
+          collapsed: true, //false
           items: [
             { label: '笔记索引', slug: 'guide' },
             { label: '自托管站点', link: '/site/' },
@@ -78,4 +78,9 @@ export default defineConfig({
       },
     }),
   ],
+  vite: {
+    ssr: {
+      noExternal: ['mermaid'],
+    },
+  },
 });
